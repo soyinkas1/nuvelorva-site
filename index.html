@@ -3,370 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ============================================================
-     BEFORE YOU DEPLOY — replace these 4 things:
-     1. <title>/description/canonical/OG below: change the domain to yours.
-     2. PINTEREST CLAIM: paste the meta tag from Pinterest
-        (Settings > Claimed accounts > Add HTML tag) where marked below.
-     3. AFFILIATE LINKS: every button has href="#REPLACE-..." — swap in your link.
-        Keep rel="nofollow sponsored" and the disclosure.
-     4. IMAGES: each card has a "plate" placeholder with a comment showing
-        where to drop your own/licensed product photo.
-     Then: rename to index.html, put it in a folder named
-     "small-space-academia-nook", and deploy free on Cloudflare Pages
-     or GitHub Pages. URL becomes nuvelorva.com/small-space-academia-nook
-     ============================================================ -->
-
-<title>Small-Space Reading Nook Ideas for Renters (No-Drill Dark Academia) | Nuvelorva</title>
-<meta name="description" content="12 renter-friendly, no-drill ways to build a cozy dark academia reading nook in a tiny flat — lamp-lit, moody and deposit-safe. Shop the edit.">
-<link rel="canonical" href="https://nuvelorva.com/small-space-academia-nook">
-
-<!-- Open Graph / Rich Pin data -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="Small-Space Reading Nook Ideas for Renters (No-Drill Dark Academia)">
-<meta property="og:description" content="12 renter-friendly, no-drill ways to build a cozy dark academia reading nook in a tiny flat — lamp-lit, moody and deposit-safe.">
+<title>Nuvelorva — Small-Space Dark Academia for Renters</title>
+<meta name="description" content="Dressing and decorating like a poet in a rented flat. Small-space dark academia edits — reading nooks, no-drill decor, bookshelf styling and vintage-leaning capsule wardrobes. All renter-safe.">
+<link rel="canonical" href="https://nuvelorva.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nuvelorva — Small-Space Dark Academia for Renters">
+<meta property="og:description" content="Dressing and decorating like a poet in a rented flat — small-space, vintage-leaning, renter-safe.">
 <meta property="og:image" content="https://nuvelorva.com/cover.jpg">
-
-<!-- PINTEREST CLAIM TAG GOES HERE ↓ (paste the line Pinterest gives you) -->
-<meta name="p:domain_verify" content="58fa01e019e67357a3ba053c7ff97a23"/>
-
+<!-- PINTEREST CLAIM TAG GOES HERE (Settings > Claimed accounts) -->
+<!-- <meta name="p:domain_verify" content="xxxxxxxxxxxxxxxxxxxxxxxxxx"/> -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
-
 <style>
-  :root{
-    --ink:#1F1B17;        /* espresso-black ground */
-    --espresso:#2A231C;   /* secondary dark surface */
-    --parchment:#EDE6D6;  /* card surface */
-    --parchment-2:#E2D9C6;
-    --oxblood:#6B2B26;    /* primary accent / CTA */
-    --oxblood-deep:#54201C;
-    --brass:#B08D57;      /* secondary accent / numerals / rules */
-    --sage:#7A7E5A;       /* muted tertiary */
-    --cream:#E9E1D2;      /* text on dark */
-    --cream-dim:#B6AC98;  /* muted text on dark */
-    --inktext:#241F1A;    /* text on parchment */
-  }
+  :root{--ink:#1F1B17;--espresso:#2A231C;--parchment:#EDE6D6;--parchment-2:#E2D9C6;
+    --oxblood:#6B2B26;--oxblood-deep:#54201C;--brass:#B08D57;--sage:#7A7E5A;
+    --cream:#E9E1D2;--cream-dim:#B6AC98;--inktext:#241F1A;}
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--ink);
-    color:var(--cream);
-    font-family:"Mulish",system-ui,sans-serif;
-    font-weight:300;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
+  body{margin:0;background:var(--ink);color:var(--cream);font-family:"Mulish",system-ui,sans-serif;
+    font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;}
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
-  .eyebrow{
-    font-family:"Mulish",sans-serif;font-weight:600;
-    text-transform:uppercase;letter-spacing:.28em;
-    font-size:.72rem;color:var(--brass);
-  }
-
-  /* ---------- disclosure bar ---------- */
-  .disclosure{
-    background:var(--espresso);
-    border-bottom:1px solid rgba(176,141,87,.25);
-    font-size:.8rem;color:var(--cream-dim);
-    text-align:center;padding:10px 24px;
-  }
+  .eyebrow{font-weight:600;text-transform:uppercase;letter-spacing:.28em;font-size:.72rem;color:var(--brass);}
+  .disclosure{background:var(--espresso);border-bottom:1px solid rgba(176,141,87,.25);
+    font-size:.8rem;color:var(--cream-dim);text-align:center;padding:10px 24px;}
   .disclosure b{color:var(--brass);font-weight:600;}
-
-  /* ---------- hero ---------- */
-  .hero{position:relative;overflow:hidden;text-align:center;
-    padding:104px 24px 92px;}
-  /* SIGNATURE: a single lamp's glow in a dark room */
-  .hero::before{
-    content:"";position:absolute;top:-10%;left:50%;
-    width:760px;height:760px;transform:translateX(-50%);
-    background:radial-gradient(circle, rgba(176,141,87,.30) 0%, rgba(176,141,87,.10) 32%, rgba(31,27,23,0) 66%);
-    pointer-events:none;animation:flicker 7s ease-in-out infinite;
-  }
-  @keyframes flicker{0%,100%{opacity:.85;}50%{opacity:1;}}
+  .hero{position:relative;overflow:hidden;text-align:center;padding:100px 24px 70px;}
+  .hero::before{content:"";position:absolute;top:-10%;left:50%;width:760px;height:760px;transform:translateX(-50%);
+    background:radial-gradient(circle, rgba(176,141,87,.30) 0%, rgba(176,141,87,.10) 32%, rgba(31,27,23,0) 66%);pointer-events:none;}
   .hero__inner{position:relative;}
-  .hero h1{
-    font-family:"Cormorant Garamond",serif;font-weight:500;
-    font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.04;
-    margin:.35em auto .3em;max-width:14ch;color:#F3ECDD;
-  }
-  .hero p.dek{
-    max-width:46ch;margin:0 auto;color:var(--cream-dim);
-    font-size:1.05rem;
-  }
-  .hero .rule{
-    width:54px;height:1px;background:var(--brass);
-    margin:30px auto 0;opacity:.7;
-  }
-
-  /* ---------- intro band ---------- */
-  .intro{background:var(--parchment);color:var(--inktext);
-    padding:64px 24px;}
-  .intro .wrap{max-width:660px;}
-  .intro p{font-size:1.12rem;line-height:1.7;margin:0 0 1em;}
-  .intro p:last-child{margin-bottom:0;}
-  .intro em{font-style:italic;color:var(--oxblood);}
-
-  /* ---------- how-to ---------- */
-  .howto{padding:72px 24px 40px;}
-  .howto h2,.edit h2{
-    font-family:"Cormorant Garamond",serif;font-weight:500;
-    font-size:clamp(1.9rem,4vw,2.7rem);color:#F1EADB;
-    margin:.2em 0 .1em;
-  }
-  .howto .lede{color:var(--cream-dim);max-width:52ch;margin:0 0 36px;}
-  .steps{list-style:none;margin:0;padding:0;display:grid;gap:2px;
-    border-top:1px solid rgba(176,141,87,.22);}
-  .steps li{display:grid;grid-template-columns:54px 1fr;gap:18px;
-    align-items:baseline;padding:20px 4px;
-    border-bottom:1px solid rgba(176,141,87,.22);}
-  .steps .n{font-family:"Cormorant Garamond",serif;color:var(--brass);
-    font-size:1.5rem;font-weight:500;}
-  .steps .t{color:var(--cream);}
-  .steps .t b{color:#F1EADB;font-weight:600;font-family:"Mulish";}
-
-  /* ---------- the edit (cards) ---------- */
-  .edit{padding:56px 24px 24px;}
-  .edit .head{margin-bottom:38px;}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
-  @media(max-width:880px){.grid{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:560px){.grid{grid-template-columns:1fr;}}
-
-  .card{background:var(--parchment);color:var(--inktext);
-    border-radius:2px;overflow:hidden;display:flex;flex-direction:column;
-    box-shadow:0 14px 30px rgba(0,0,0,.34);
-    transition:transform .25s ease, box-shadow .25s ease;}
-  .card:hover{transform:translateY(-5px);
-    box-shadow:0 22px 44px rgba(0,0,0,.45);}
-
-  /* image plate placeholder — swap for a real <img> */
-  .card__plate{position:relative;aspect-ratio:4/5;
-    background:
-      linear-gradient(135deg,var(--parchment-2),var(--parchment));
-    display:flex;align-items:flex-end;justify-content:space-between;
-    padding:14px 16px;border-bottom:1px solid rgba(36,31,26,.12);}
-  .card__plate .num{font-family:"Cormorant Garamond",serif;
-    font-size:2.6rem;line-height:1;color:var(--oxblood);font-weight:500;}
-  .card__plate .swap{font-size:.66rem;letter-spacing:.16em;
-    text-transform:uppercase;color:rgba(36,31,26,.42);
-    border:1px dashed rgba(36,31,26,.30);padding:5px 8px;border-radius:2px;}
-  .card__body{padding:20px 20px 22px;display:flex;flex-direction:column;
-    flex:1;}
-  .card__tag{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--sage);font-weight:600;margin-bottom:8px;}
-  .card h3{font-family:"Cormorant Garamond",serif;font-weight:600;
-    font-size:1.42rem;line-height:1.15;margin:0 0 8px;color:var(--inktext);}
-  .card p{font-size:.92rem;line-height:1.55;color:#4a4138;margin:0 0 8px;}
-  .card .renter{font-size:.8rem;color:var(--oxblood);font-weight:600;
-    margin:0 0 16px;}
-  .card .renter::before{content:"✦ ";color:var(--brass);}
-  .btn{margin-top:auto;display:inline-block;text-align:center;
-    background:var(--oxblood);color:#F3ECDD;text-decoration:none;
-    font-family:"Mulish";font-weight:600;font-size:.82rem;
-    letter-spacing:.06em;text-transform:uppercase;
-    padding:12px 16px;border-radius:2px;
-    transition:background .2s ease;}
-  .btn:hover{background:var(--oxblood-deep);}
-  .btn:focus-visible,.foot a:focus-visible{outline:2px solid var(--brass);
-    outline-offset:3px;}
-
-  /* ---------- footer ---------- */
-  .foot{padding:64px 24px 48px;text-align:center;
-    border-top:1px solid rgba(176,141,87,.22);margin-top:48px;}
-  .foot .mark{font-family:"Cormorant Garamond",serif;font-size:1.6rem;
-    color:#F1EADB;letter-spacing:.02em;}
+  .hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.6rem,6vw,4.4rem);
+    line-height:1.05;margin:.3em auto .3em;max-width:16ch;color:#F3ECDD;}
+  .hero p.dek{max-width:52ch;margin:0 auto;color:var(--cream-dim);font-size:1.08rem;}
+  .hero .rule{width:54px;height:1px;background:var(--brass);margin:28px auto 0;opacity:.7;}
+  .edits{padding:56px 24px 24px;}
+  .edits h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:2rem;color:#F1EADB;margin:0 0 6px;}
+  .edits .lede{color:var(--cream-dim);margin:0 0 32px;}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  @media(max-width:720px){.grid{grid-template-columns:1fr;}}
+  .tile{display:block;text-decoration:none;background:var(--parchment);color:var(--inktext);
+    border-radius:3px;padding:22px 24px;transition:transform .2s ease, box-shadow .2s ease;
+    box-shadow:0 10px 24px rgba(0,0,0,.28);}
+  .tile:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(0,0,0,.4);}
+  .tile .cat{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);font-weight:600;}
+  .tile h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.4rem;margin:6px 0 6px;color:var(--inktext);}
+  .tile p{font-size:.9rem;color:#4a4138;margin:0;}
+  .tile .go{color:var(--oxblood);font-weight:600;font-size:.82rem;margin-top:12px;display:inline-block;}
+  .foot{padding:56px 24px 48px;text-align:center;border-top:1px solid rgba(176,141,87,.22);margin-top:44px;}
+  .foot .mark{font-family:"Cormorant Garamond",serif;font-size:1.6rem;color:#F1EADB;}
   .foot .mark span{color:var(--brass);}
-  .foot p{max-width:54ch;margin:14px auto 0;color:var(--cream-dim);
-    font-size:.86rem;}
+  .foot p{max-width:56ch;margin:12px auto 0;color:var(--cream-dim);font-size:.86rem;}
   .foot a{color:var(--brass);}
-
-  @media(prefers-reduced-motion:reduce){
-    .hero::before{animation:none;}
-    html{scroll-behavior:auto;}
-    .card{transition:none;}
-  }
 </style>
 </head>
 <body>
 
 <div class="disclosure">
-  This edit contains <b>affiliate links</b>. If you buy through them I may earn a small commission, at no extra cost to you — it never changes what makes the list.
+  Some links across this site are <b>affiliate links</b> — I may earn a small commission at no extra cost to you.
 </div>
 
 <header class="hero">
   <div class="hero__inner">
-    <span class="eyebrow">The Small-Space Edit · Nothing That Loses Your Deposit</span>
-    <h1>A reading nook for the smallest rented rooms.</h1>
-    <p class="dek">Twelve renter-safe pieces to build a moody, lamp-lit corner worth disappearing into — no drilling, no damage, no permission slip required.</p>
+    <span class="eyebrow">Nuvelorva · Small-Space Dark Academia</span>
+    <h1>Dress &amp; decorate like a poet — in a rented flat.</h1>
+    <p class="dek">Small-space, vintage-leaning, lamp-lit edits for renters. Nothing that drills, nothing that loses your deposit.</p>
     <div class="rule"></div>
   </div>
 </header>
 
-<section class="intro">
+<section class="edits">
   <div class="wrap">
-    <p>You don't need a library, a bay window, or a landlord who likes you. A dark academia reading nook is really just three things done well in a small space: <em>warm light, a soft place to sit, and books within arm's reach</em> — none of which require a single hole in the wall.</p>
-    <p>Everything below is freestanding, clip-on, peel-off or stack-up. Build the corner this weekend, and take it all with you when the lease ends. Here's the edit.</p>
-  </div>
-</section>
-
-<section class="howto">
-  <div class="wrap">
-    <span class="eyebrow">First, the renter's rules</span>
-    <h2>How to build it without drilling</h2>
-    <p class="lede">Five moves that get you the whole look while keeping every wall — and your deposit — intact.</p>
-    <ol class="steps">
-      <li><span class="n">1</span><span class="t"><b>Light it, don't wire it.</b> A clip-on or plug-in lamp gives you that single-pool-of-warm-light feeling with zero electrician and zero fixings.</span></li>
-      <li><span class="n">2</span><span class="t"><b>Lean, don't fix.</b> A ladder shelf and leaning frames hold your books and art against the wall by gravity alone.</span></li>
-      <li><span class="n">3</span><span class="t"><b>Stick the soft stuff.</b> Peel-and-stick wallpaper and tension rods add drama and a curtain to close the nook off — both come away clean.</span></li>
-      <li><span class="n">4</span><span class="t"><b>Layer the floor.</b> One small rug defines the corner as a room-within-a-room without touching a wall.</span></li>
-      <li><span class="n">5</span><span class="t"><b>Keep a receipts box.</b> Removable hooks and damage-free strips do the small jobs; save the packaging so taking it down is as tidy as putting it up.</span></li>
-    </ol>
-  </div>
-</section>
-
-<section class="edit">
-  <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">The Edit · 12 pieces</span>
-      <h2>The small-space academia nook, shopped</h2>
-    </div>
+    <h2>The edits</h2>
+    <p class="lede">Eight shoppable guides for the small-space academia look.</p>
     <div class="grid">
 
-      <!-- CARD — replace .card__plate with: <img class="card__img" src="lamp.jpg" alt="Clip-on brass reading lamp"> -->
-      <article class="card">
-        <div class="card__plate"><span class="num">01</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Lighting</span>
-          <h3>Clip-on brass reading lamp</h3>
-          <p>The whole mood in one object: a warm, focused pool of light that turns any chair into a study after dark.</p>
-          <p class="renter">No wiring — clips to a shelf, plugs into the wall.</p>
-          <a class="btn" href="https://amzn.to/4v9lITX" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
+      <a class="tile" href="small-space-academia-nook/">
+        <span class="cat">The Nook</span><h3>Small-space reading nook</h3>
+        <p>A cozy, lamp-lit reading corner for the tiniest rented rooms — no drilling.</p><span class="go">Explore →</span></a>
 
-      <article class="card">
-        <div class="card__plate"><span class="num">02</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Seating</span>
-          <h3>Small upholstered armchair</h3>
-          <p>A compact, curl-up chair in oxblood or deep green — the anchor the whole nook is built around.</p>
-          <p class="renter">Freestanding; fits a corner under 70cm wide.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
+      <a class="tile" href="autumn-academia-capsule/">
+        <span class="cat">The Capsule</span><h3>Autumn academia wardrobe</h3>
+        <p>A full autumn academia look built from a few vintage-leaning pieces.</p><span class="go">Explore →</span></a>
 
-      <article class="card">
-        <div class="card__plate"><span class="num">03</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Shelving</span>
-          <h3>Leaning ladder bookshelf</h3>
-          <p>Five tiers of books and curios that rest against the wall and need not a single screw to stand.</p>
-          <p class="renter">Leans — no wall fixing required.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
+      <a class="tile" href="dark-academia-bookshelf-styling/">
+        <span class="cat">The Shelf</span><h3>Bookshelf styling</h3>
+        <p>Style a moody, book-lined shelf in a small room — brass, books and warm light.</p><span class="go">Explore →</span></a>
 
-      <article class="card">
-        <div class="card__plate"><span class="num">04</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Lighting</span>
-          <h3>Stick-on wall sconces</h3>
-          <p>Battery or plug-in sconces that throw soft up-light for that candlelit-library glow.</p>
-          <p class="renter">Mount with adhesive — peels off clean.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
+      <a class="tile" href="no-drill-academia-decor/">
+        <span class="cat">Renter Rules</span><h3>No-drill decor</h3>
+        <p>Peel-and-stick and freestanding swaps that keep every wall — and your deposit.</p><span class="go">Explore →</span></a>
 
-      <article class="card">
-        <div class="card__plate"><span class="num">05</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Textiles</span>
-          <h3>Wool throw blanket</h3>
-          <p>A heavy, moody-toned throw that makes the chair impossible to leave once it's cold out.</p>
-          <p class="renter">Nothing to install — just drape.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
+      <a class="tile" href="renter-academia-starter/">
+        <span class="cat">Renter Rules</span><h3>Renter's starter kit</h3>
+        <p>The freestanding, removable foundation pieces for a moody rental.</p><span class="go">Explore →</span></a>
 
-      <article class="card">
-        <div class="card__plate"><span class="num">06</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Textiles</span>
-          <h3>Velvet lumbar cushions</h3>
-          <p>Oxblood and forest velvet in a pair — the small luxury that reads as "curated," not "rented."</p>
-          <p class="renter">Soft furnishings; zero damage.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
+      <a class="tile" href="academia-desk-setup/">
+        <span class="cat">The Ritual</span><h3>Academia desk setup</h3>
+        <p>A moody, focused small-space study corner in brass, leather and wood.</p><span class="go">Explore →</span></a>
 
-      <article class="card">
-        <div class="card__plate"><span class="num">07</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Walls</span>
-          <h3>Peel-and-stick wallpaper</h3>
-          <p>A moody floral or library motif on one small wall instantly turns a corner into a set.</p>
-          <p class="renter">Removable — comes away without a mark.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
+      <a class="tile" href="slow-living-academia-rituals/">
+        <span class="cat">The Ritual</span><h3>Slow-living rituals</h3>
+        <p>Cosy candlelit rituals that tie the whole poetcore mood together.</p><span class="go">Explore →</span></a>
 
-      <article class="card">
-        <div class="card__plate"><span class="num">08</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Floor</span>
-          <h3>Small vintage-style rug</h3>
-          <p>A faded, antique-look rug to draw the boundary of your nook and warm the floor underfoot.</p>
-          <p class="renter">Defines the space with no fixings.</p>
-          <a class="btn" href="https://amzn.to/4eMHHLw" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__plate"><span class="num">09</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Surface</span>
-          <h3>Stacked side table</h3>
-          <p>A slim table — or a tall stack of hardbacks — for the tea, the candle and the book you're mid-way through.</p>
-          <p class="renter">Freestanding; tucks into tight corners.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__plate"><span class="num">10</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Atmosphere</span>
-          <h3>Amber apothecary candle</h3>
-          <p>Smoke, leather, old paper — the scent does as much work as the lighting for the academia mood.</p>
-          <p class="renter">Pure atmosphere; sits on any surface.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__plate"><span class="num">11</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Privacy</span>
-          <h3>Tension-rod curtain</h3>
-          <p>Hang a heavy curtain to close the nook off into its own small, hushed world.</p>
-          <p class="renter">Tension rod — wedges in, no drilling.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__plate"><span class="num">12</span><span class="swap">Your photo</span></div>
-        <div class="card__body">
-          <span class="card__tag">Styling</span>
-          <h3>Vintage clothbound book set</h3>
-          <p>A bundle of old clothbound classics — the spines alone do half the decorating.</p>
-          <p class="renter">Decor you'll actually read.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
+      <a class="tile" href="dark-academia-budget-wardrobe/">
+        <span class="cat">The Capsule</span><h3>Budget wardrobe</h3>
+        <p>The dark academia look on a budget — thrift-first, affordable staples.</p><span class="go">Explore →</span></a>
 
     </div>
   </div>
@@ -375,8 +115,8 @@
 <footer class="foot">
   <div class="wrap">
     <div class="mark">Nuvel<span>orva</span></div>
-    <p>Dressing &amp; decorating like a poet — in a rented flat. <br>
-    Affiliate disclosure: some links above are affiliate links, meaning I may earn a small commission if you buy through them, at no extra cost to you. I only include pieces that fit the look and the renter's rules. Questions? <a href="mailto:admin@nuvelorva.com">admin@nuvelorva.com</a>.</p>
+    <p>Dressing &amp; decorating like a poet — in a rented flat.<br>
+    Some links are affiliate links; I may earn a small commission at no extra cost to you. Questions? <a href="mailto:admin@nuvelorva.com">admin@nuvelorva.com</a>.</p>
   </div>
 </footer>
 
