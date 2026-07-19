@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Deploy: put this file as index.html in a folder named "slow-living-academia-rituals" -> nuvelorva.com/slow-living-academia-rituals
-     PER CARD (during the SiteStripe step): 1) src="" = Amazon product image URL  2) href="" = your affiliate link.
-     Keep rel="nofollow sponsored". Paste your Pinterest claim tag where marked. -->
-<title>Slow Living Rituals for Cozy Academia Season | Nuvelorva</title>
-<meta name="description" content="Cosy slow-living rituals for autumn academia — candlelit reading, journaling and unhurried evenings, plus the small pieces that set the mood. Shop the edit.">
+<!-- nuvelorva.com/slow-living-academia-rituals: content-first guide; products woven inline.
+     Each product link keeps rel="nofollow sponsored". Paste your Pinterest claim tag where marked. -->
+<title>A Renter's Guide to Slow-Living Rituals for Cosy Academia Season | Nuvelorva</title>
+<meta name="description" content="A guide to slow-living rituals for a small rented flat: the Sunday reset, an evening wind-down, journaling, a tea ritual and analogue reading, plus honest notes on the small pieces that make each one easier to keep.">
 <link rel="canonical" href="https://nuvelorva.com/slow-living-academia-rituals">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Slow Living Rituals for Cozy Academia Season">
-<meta property="og:description" content="Cosy slow-living rituals for autumn academia — candlelit reading, journaling and unhurried evenings, plus the small pieces that set the mood. Shop the edit.">
+<meta property="og:title" content="A Renter's Guide to Slow-Living Rituals for Cosy Academia Season">
+<meta property="og:description" content="Slow-living rituals for a small rented flat: the Sunday reset, an evening wind-down, journaling, a tea ritual and reading on paper, with the small pieces that help each one stick.">
 <meta property="og:image" content="https://nuvelorva.com/cover.jpg">
 <!-- PINTEREST CLAIM TAG GOES HERE -->
 <!-- <meta name="p:domain_verify" content="xxxxxxxxxxxxxxxxxxxxxxxxxx"/> -->
@@ -27,241 +26,274 @@
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{margin:0;background:var(--ink);color:var(--cream);
-    font-family:"Mulish",system-ui,sans-serif;font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;}
+    font-family:"Mulish",system-ui,sans-serif;font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;}
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .measure{max-width:680px;}
   .eyebrow{font-family:"Mulish",sans-serif;font-weight:600;text-transform:uppercase;
     letter-spacing:.28em;font-size:.72rem;color:var(--brass);}
+  a{color:var(--brass);}
   .disclosure{background:var(--espresso);border-bottom:1px solid rgba(176,141,87,.25);
     font-size:.8rem;color:var(--cream-dim);text-align:center;padding:10px 24px;}
   .disclosure b{color:var(--brass);font-weight:600;}
-  .hero{position:relative;overflow:hidden;text-align:center;padding:104px 24px 92px;}
+
+  .hero{position:relative;overflow:hidden;text-align:center;padding:100px 24px 84px;}
   .hero::before{content:"";position:absolute;top:-10%;left:50%;width:760px;height:760px;transform:translateX(-50%);
     background:radial-gradient(circle, rgba(176,141,87,.30) 0%, rgba(176,141,87,.10) 32%, rgba(31,27,23,0) 66%);
     pointer-events:none;animation:flicker 7s ease-in-out infinite;}
   @keyframes flicker{0%,100%{opacity:.85;}50%{opacity:1;}}
   .hero__inner{position:relative;}
-  .hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.6rem,6vw,4.6rem);
-    line-height:1.04;margin:.35em auto .3em;max-width:14ch;color:#F3ECDD;}
-  .hero p.dek{max-width:46ch;margin:0 auto;color:var(--cream-dim);font-size:1.05rem;}
-  .hero .rule{width:54px;height:1px;background:var(--brass);margin:30px auto 0;opacity:.7;}
-  .intro{background:var(--parchment);color:var(--inktext);padding:64px 24px;}
-  .intro .wrap{max-width:660px;}
-  .intro p{font-size:1.12rem;line-height:1.7;margin:0 0 1em;}
-  .intro p:last-child{margin-bottom:0;}
-  .intro em{font-style:italic;color:var(--oxblood);}
-  .howto{padding:72px 24px 40px;}
-  .howto h2,.edit h2{font-family:"Cormorant Garamond",serif;font-weight:500;
-    font-size:clamp(1.9rem,4vw,2.7rem);color:#F1EADB;margin:.2em 0 .1em;}
-  .howto .lede{color:var(--cream-dim);max-width:52ch;margin:0 0 36px;}
-  .steps{list-style:none;margin:0;padding:0;display:grid;gap:2px;border-top:1px solid rgba(176,141,87,.22);}
-  .steps li{display:grid;grid-template-columns:54px 1fr;gap:18px;align-items:baseline;
-    padding:20px 4px;border-bottom:1px solid rgba(176,141,87,.22);}
-  .steps .n{font-family:"Cormorant Garamond",serif;color:var(--brass);font-size:1.5rem;font-weight:500;}
-  .steps .t{color:var(--cream);}
-  .steps .t b{color:#F1EADB;font-weight:600;font-family:"Mulish";}
-  .edit{padding:56px 24px 24px;}
-  .edit .head{margin-bottom:38px;}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
-  @media(max-width:880px){.grid{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:560px){.grid{grid-template-columns:1fr;}}
-  .card{background:var(--parchment);color:var(--inktext);border-radius:2px;overflow:hidden;
-    display:flex;flex-direction:column;box-shadow:0 14px 30px rgba(0,0,0,.34);
-    transition:transform .25s ease, box-shadow .25s ease;}
-  .card:hover{transform:translateY(-5px);box-shadow:0 22px 44px rgba(0,0,0,.45);}
-  .card__plate{position:relative;aspect-ratio:4/5;
-    background:linear-gradient(135deg,var(--parchment-2),var(--parchment));
-    display:flex;align-items:flex-end;justify-content:space-between;
-    padding:14px 16px;border-bottom:1px solid rgba(36,31,26,.12);}
-  .card__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;
-    background:var(--parchment-2);}
-  .card__img.missing{display:none;}
-  .card__plate .num{font-family:"Cormorant Garamond",serif;font-size:2.6rem;line-height:1;
-    color:var(--oxblood);font-weight:500;}
-  .card__plate .swap{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
-    color:rgba(36,31,26,.42);border:1px dashed rgba(36,31,26,.30);padding:5px 8px;border-radius:2px;}
-  .card__body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1;}
-  .card__tag{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);
-    font-weight:600;margin-bottom:8px;}
-  .card h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.42rem;line-height:1.15;
-    margin:0 0 8px;color:var(--inktext);}
-  .card p{font-size:.92rem;line-height:1.55;color:#4a4138;margin:0 0 8px;}
-  .card .renter{font-size:.8rem;color:var(--oxblood);font-weight:600;margin:0 0 16px;}
-  .card .renter::before{content:"\2726 ";color:var(--brass);}
-  .btn{margin-top:auto;display:inline-block;text-align:center;background:var(--oxblood);color:#F3ECDD;
-    text-decoration:none;font-family:"Mulish";font-weight:600;font-size:.82rem;letter-spacing:.06em;
-    text-transform:uppercase;padding:12px 16px;border-radius:2px;transition:background .2s ease;}
-  .btn:hover{background:var(--oxblood-deep);}
-  .btn:focus-visible,.foot a:focus-visible{outline:2px solid var(--brass);outline-offset:3px;}
-  .foot{padding:64px 24px 48px;text-align:center;border-top:1px solid rgba(176,141,87,.22);margin-top:48px;}
+  .hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.5rem,5.4vw,4.2rem);
+    line-height:1.06;margin:.35em auto .3em;max-width:18ch;color:#F3ECDD;}
+  .hero p.dek{max-width:52ch;margin:0 auto;color:var(--cream-dim);font-size:1.05rem;}
+  .hero .meta{margin-top:22px;color:var(--cream-dim);font-size:.8rem;letter-spacing:.04em;}
+  .hero .rule{width:54px;height:1px;background:var(--brass);margin:26px auto 0;opacity:.7;}
+
+  /* article body on parchment for readability */
+  .article{background:var(--parchment);color:var(--inktext);padding:66px 24px 40px;}
+  .article .measure{margin:0 auto;}
+  .article p{font-size:1.1rem;line-height:1.75;margin:0 0 1.15em;}
+  .article em{font-style:italic;color:var(--oxblood);}
+  .article h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(1.8rem,3.6vw,2.5rem);
+    color:var(--oxblood-deep);margin:1.9em 0 .35em;line-height:1.12;}
+  .article h2:first-of-type{margin-top:.3em;}
+  .article h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.4rem;color:var(--inktext);
+    margin:1.5em 0 .3em;}
+  .article .kicker{display:block;font-family:"Mulish";font-weight:600;text-transform:uppercase;
+    letter-spacing:.22em;font-size:.7rem;color:var(--sage);margin-bottom:.5em;}
+  .article ul.plain{margin:0 0 1.2em;padding-left:1.1em;}
+  .article ul.plain li{margin:.3em 0;line-height:1.65;}
+  .rule-list{list-style:none;margin:1em 0 1.4em;padding:0;}
+  .rule-list li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:baseline;
+    padding:14px 0;border-bottom:1px solid rgba(36,31,26,.14);}
+  .rule-list li:first-child{border-top:1px solid rgba(36,31,26,.14);}
+  .rule-list .n{font-family:"Cormorant Garamond",serif;color:var(--oxblood);font-size:1.4rem;}
+  .rule-list b{color:var(--inktext);}
+
+  /* inline product recommendation */
+  .pick{border-left:3px solid var(--brass);background:rgba(176,141,87,.10);
+    padding:14px 18px;margin:1.3em 0 1.5em;border-radius:2px;}
+  .pick .lab{font-family:"Mulish";font-weight:600;text-transform:uppercase;letter-spacing:.16em;
+    font-size:.64rem;color:var(--sage);}
+  .pick .name{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.2rem;color:var(--inktext);
+    margin:.15em 0 .2em;}
+  .pick p{font-size:.96rem;line-height:1.6;margin:0 0 .7em;color:#4a4138;}
+  .pick a.shop{display:inline-block;background:var(--oxblood);color:#F3ECDD;text-decoration:none;
+    font-family:"Mulish";font-weight:600;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;
+    padding:9px 15px;border-radius:2px;transition:background .2s ease;}
+  .pick a.shop:hover{background:var(--oxblood-deep);}
+
+  /* weekend plan */
+  .plan{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:1.4em 0 1.6em;}
+  @media(max-width:640px){.plan{grid-template-columns:1fr;}}
+  .plan .day{background:var(--parchment-2);border-radius:3px;padding:20px 22px;}
+  .plan .day h3{margin:.1em 0 .5em;color:var(--oxblood-deep);}
+  .plan .day ul{margin:0;padding-left:1.05em;}
+  .plan .day li{margin:.35em 0;font-size:.98rem;}
+
+  /* faq */
+  .faq{margin:1em 0 1.4em;}
+  .faq details{border-bottom:1px solid rgba(36,31,26,.16);padding:6px 0;}
+  .faq summary{cursor:pointer;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.22rem;
+    color:var(--inktext);padding:12px 0;list-style:none;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::before{content:"+";color:var(--brass);font-family:"Mulish";margin-right:12px;font-weight:600;}
+  .faq details[open] summary::before{content:"\2013";}
+  .faq details p{margin:0 0 14px;font-size:1.02rem;}
+
+  /* full edit list */
+  .editlist{background:var(--espresso);color:var(--cream);padding:60px 24px 20px;}
+  .editlist h2{font-family:"Cormorant Garamond",serif;font-weight:500;color:#F1EADB;
+    font-size:clamp(1.8rem,4vw,2.5rem);margin:.1em 0 .1em;}
+  .editlist .lede{color:var(--cream-dim);max-width:56ch;margin:0 0 30px;}
+  .editlist ol{list-style:none;counter-reset:e;margin:0;padding:0;
+    display:grid;grid-template-columns:1fr 1fr;gap:2px 40px;}
+  @media(max-width:680px){.editlist ol{grid-template-columns:1fr;}}
+  .editlist li{counter-increment:e;display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;
+    padding:14px 0;border-bottom:1px solid rgba(176,141,87,.20);}
+  .editlist li::before{content:counter(e,decimal-leading-zero);font-family:"Cormorant Garamond",serif;
+    color:var(--brass);font-size:1.15rem;}
+  .editlist .en{color:#F1EADB;}
+  .editlist .es{font-size:.72rem;color:var(--sage);display:block;letter-spacing:.14em;text-transform:uppercase;}
+  .editlist a{color:var(--brass);text-decoration:none;font-weight:600;font-size:.76rem;letter-spacing:.06em;
+    text-transform:uppercase;white-space:nowrap;}
+  .editlist a:hover{text-decoration:underline;}
+
+  .foot{padding:56px 24px 48px;text-align:center;border-top:1px solid rgba(176,141,87,.22);}
   .foot .mark{font-family:"Cormorant Garamond",serif;font-size:1.6rem;color:#F1EADB;letter-spacing:.02em;}
   .foot .mark span{color:var(--brass);}
-  .foot p{max-width:54ch;margin:14px auto 0;color:var(--cream-dim);font-size:.86rem;}
+  .foot p{max-width:58ch;margin:14px auto 0;color:var(--cream-dim);font-size:.86rem;}
   .foot a{color:var(--brass);}
-  @media(prefers-reduced-motion:reduce){.hero::before{animation:none;}html{scroll-behavior:auto;}.card{transition:none;}}
+  a:focus-visible{outline:2px solid var(--brass);outline-offset:3px;}
+  @media(prefers-reduced-motion:reduce){.hero::before{animation:none;}html{scroll-behavior:auto;}}
 </style>
 </head>
 <body>
 
 <div class="disclosure">
-  This edit contains <b>affiliate links</b>. If you buy through them I may earn a small commission, at no extra cost to you — it never changes what makes the list.
+  This guide contains <b>affiliate links</b>. If you buy through them I may earn a small commission, at no extra cost to you. It never changes what goes on the list.
 </div>
 
 <header class="hero">
   <div class="hero__inner">
-    <span class="eyebrow">The Ritual Edit · Slow, Lamp-Lit Evenings</span>
-    <h1>Slow rituals for academia season.</h1>
-    <p class="dek">The small, unhurried rituals — candlelight, tea, a journal — that turn an ordinary evening into the poetcore mood, and the pieces that set it.</p>
+    <span class="eyebrow">Poetcore Living · A Renter's Guide</span>
+    <h1>Slow-living rituals for cosy academia season</h1>
+    <p class="dek">The small, unhurried habits that hold the poetcore mood together in a flat you don't own: a Sunday reset, an evening wind-down, journaling, tea and reading by lamplight.</p>
+    <div class="meta">By Nuvelorva · A 7-minute read · Small-space &amp; renter-tested</div>
     <div class="rule"></div>
   </div>
 </header>
 
-<section class="intro">
-  <div class="wrap">
-    <p>Slow living is really just <em>attention paid to small things</em> — a candle lit on purpose, a page written by hand, tea made slowly. It's the quiet backbone of the whole academia feeling.</p>
-    <p>None of this is about buying more; it's about a few objects that make the ritual easier to reach for. Here's the edit.</p>
-  </div>
-</section>
+<article class="article">
+  <div class="measure">
 
-<section class="howto">
-  <div class="wrap">
-    <span class="eyebrow">First, the ritual</span>
-    <h2>How to build the ritual</h2>
-    <p class="lede">Five small habits that set the slow-academia tone.</p>
-    <ol class="steps">
-      <li><span class="n">1</span><span class="t"><b>Light one candle.</b> A single amber candle marks the shift from day to evening.</span></li>
-      <li><span class="n">2</span><span class="t"><b>Write by hand.</b> A journal and a good pen slow the mind more than any screen.</span></li>
-      <li><span class="n">3</span><span class="t"><b>Make tea slowly.</b> A pot rather than a bag turns a drink into a pause.</span></li>
-      <li><span class="n">4</span><span class="t"><b>Read on paper.</b> A stack of clothbound books within reach of the chair.</span></li>
-      <li><span class="n">5</span><span class="t"><b>Dim the room.</b> Warm, low light over bright overheads — always.</span></li>
+    <p>Most slow-living inspiration assumes you have somewhere slow to live. A farmhouse kitchen, morning light across a wide oak table, a spare room to keep a reading chair no one else sits in. For the rest of us, renting one or two rooms, sharing walls, working from the same corner where we also eat and sleep, the useful question isn't <em>how do I find more space to be calm in?</em> It's a smaller one, and easier to answer: <em>how do I build a little calm into the space I already have?</em></p>
+
+    <p>The good news, after a few years of doing this in flats I couldn't change and would eventually leave, is that slow living was never really about square footage. It's about attention: a handful of small things done on purpose rather than on autopilot. A candle lit to mark the end of the working day. A page written by hand before the phone gets a look-in. Tea made in a pot instead of a mug and a teabag. These are rituals, and a ritual is portable: it costs almost nothing, leaves no mark on the wall, and comes with you when the lease ends. What follows is a set of them, the ones that carry the cosy-academia feeling most reliably, with honest notes on the few objects that make each one easier to reach for. Nothing here needs a big flat or a big budget. It needs about ten intentional minutes a day.</p>
+
+    <h2><span class="kicker">Start here</span>Why rituals beat renovations</h2>
+    <p>When a rented flat feels wrong, the instinct is to want to change the flat: new paint, more storage, a knocked-through wall you're not allowed to knock through. But the mood we're after in academia season isn't structural. It's atmospheric, and atmosphere is built out of repeated small actions far more than out of furniture. A corner becomes a reading corner the third evening you read there, not the day the chair arrives.</p>
+    <p>That's genuinely freeing if you rent. You can't move the radiator or fix the sconce, but you can absolutely own the last hour of your evening. A ritual is the one form of home improvement a landlord can't veto, and unlike a renovation it starts working the very first time you do it. The principles below are the frame; the rituals after them are the practice.</p>
+
+    <h2><span class="kicker">The principles</span>Five rules that make a ritual stick</h2>
+    <p>Every ritual in this guide obeys the same five ideas. Learn these and you can invent your own. They're the difference between a habit that lasts a winter and a candle you lit twice in October and forgot.</p>
+    <ol class="rule-list">
+      <li><span class="n">1</span><span><b>Anchor it to something you already do.</b> Rituals survive when they hitch a ride on an existing habit, like tea after dinner or the journal beside the kettle. Willpower fades; cues don't.</span></li>
+      <li><span class="n">2</span><span><b>Make it small enough to keep on a bad day.</b> One candle, one page, one pot. A ritual you can do when you're tired is a ritual you'll still have in February.</span></li>
+      <li><span class="n">3</span><span><b>Engage a sense, not a screen.</b> Warmth, scent, the weight of a book, the sound of a wooden wick: analogue cues tell the body it's time to slow down in a way a bright rectangle never will.</span></li>
+      <li><span class="n">4</span><span><b>Keep the tools in sight.</b> A ritual hidden in a drawer is a ritual you'll skip. Leave the journal open, the candle on the table, the books within arm's reach of the chair.</span></li>
+      <li><span class="n">5</span><span><b>Let it be enough.</b> This is a wellbeing practice, not a productivity one. If the point becomes doing it perfectly every day, it stops being slow. Miss a night, begin again. That's the whole method.</span></li>
     </ol>
+
+    <h2><span class="kicker">Ritual one</span>The Sunday reset</h2>
+    <p>The reset is the ritual that makes the others possible. On Sunday, or whichever day comes before your busy stretch, you spend a slow half-hour returning the flat to a state your future self can breathe in. This isn't a deep clean; it's a light one, done with attention. Clear the surfaces the week has silted up. Change the bed. Wipe the table you'll write at. Line up the week's books on the shelf. In a small flat the reset matters <em>more</em>, not less, because when one room does five jobs, a little disorder reads as a lot.</p>
+    <p>Give the reset a sensory full-stop so your brain files it as complete. Open a window for five minutes even in the cold, then close it and light something. A thread of incense smoke is an old and unhurried way to mark a room as freshly kept. It moves slowly, it smells of somewhere calmer, and lighting it becomes the small ceremony that says the reset is done and the quiet week can begin.</p>
+    <div class="pick">
+      <span class="lab">The reset marker</span>
+      <div class="name">Wood &amp; brass incense holder</div>
+      <p>A little wooden holder with a brass inlay that catches the lamplight and keeps the ash tidy, with a slow thread of smoke to close the reset and scent a just-tidied room. Sits on a desk or shelf; nothing to install.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B00OWDYQCE?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Ritual two</span>The evening wind-down</h2>
+    <p>If you keep only one ritual, keep this one. The wind-down is the deliberate seam between the working day and the evening, the ten minutes where you tell your nervous system that nothing more is required of it today. In a flat where the desk and the sofa are the same two metres apart, that seam has to be made on purpose, because the room won't make it for you.</p>
+    <p>The mechanics are simple: turn off the overhead light, turn on one warm lamp, and light a candle. That's the whole trigger. A wood-wick candle earns its keep twice over here. The low crackle and flicker do as much for the mood as any bulb, and scent is the fastest route to <em>cosy</em> the brain has. Fireside, redwood and clove notes suit the season; keep it on a stable surface and never under a shelf.</p>
+    <div class="pick">
+      <span class="lab">The evening signal</span>
+      <div class="name">Warm-woods crackling candle</div>
+      <p>Redwood, clove and a crackling wooden wick: the sound and scent that mark the shift from day to evening. The flicker does as much work as the lamp for the academia mood; pure atmosphere, sits on any surface.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B0058WBMC0?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+    <p>Then add warmth you can feel, not just see. A throw over your lap is a small, almost embarrassingly effective cue. The physical weight and heat of it settles you the way a weighted blanket does, and draped over the arm of a chair by day it quietly finishes the corner. Keep to the palette so it reads as considered rather than scavenged from the airing cupboard: olive, aubergine, rust, brass.</p>
+    <div class="pick">
+      <span class="lab">The comfort layer</span>
+      <div class="name">Cosy olive-green throw</div>
+      <p>A soft, moody olive-green throw to pull over your lap for the wind-down and drape over the chair arm by day, the small luxury that reads as "curated," not "rented." Nothing to install; just drape it.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B09VGKDQKX?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Ritual three</span>The journaling habit</h2>
+    <p>Writing by hand is the ritual that does the most for the least. A few minutes with a pen slows the mind more than any app claims to. There's no notification, no cursor blinking for a verdict, just the pace of your own hand setting the tempo. It doesn't need to be a diary. Morning pages to clear the head, three lines before bed, a reading log, a running list of the week's small good things: any of these count, and none of them requires you to be a writer.</p>
+    <p>The trick is friction, or the lack of it. Keep the journal where the ritual will actually happen, open on the bedside table, or beside the kettle if you journal with the morning tea, so reaching for it is easier than reaching for the phone. A proper bound notebook helps here in a way that feels faintly superstitious but works: something tactile and a little beautiful gets used, where a cheap pad gets ignored.</p>
+    <div class="pick">
+      <span class="lab">The daily anchor</span>
+      <div class="name">Handmade leather journal</div>
+      <p>A soft brown leather journal for morning pages, reading notes and the odd bad first draft, tactile enough that you'll want to open it, which is most of the battle. The daily ritual anchor; leave it out where you'll see it.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B08FJ9ZD6Q?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Ritual four</span>The tea ritual</h2>
+    <p>Tea is the slow-living ritual hiding in plain sight, because you're probably making it already. The shift is only in <em>how</em>. A bag in a mug is a drink; a pot is a pause. Warming the pot, measuring the leaves, waiting the four minutes with nothing to do but wait: that enforced small idleness is the entire point. It builds a ten-minute gap into the evening where you're not being useful, and being un-useful on purpose is a skill worth practising.</p>
+    <p>You don't need a shelf of ceremony ware. One good pot you like the look of, kept out on the counter rather than in a cupboard, is enough to turn the habit into a ritual. A generous six-cup pot means one brew stretches across a whole evening of reading, so you're not up and down to the kettle breaking the calm you just built.</p>
+    <div class="pick">
+      <span class="lab">The pause</span>
+      <div class="name">Matte-navy six-cup teapot</div>
+      <p>A classic matte-navy teapot that turns the evening cup into a slow one, big enough that a single pot sees you through a long read. Pure ritual, no install; leave it on the counter so the habit stays in sight.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B00NL7BV98?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Ritual five</span>Reading on paper</h2>
+    <p>The ritual that ties the others together is an analogue evening spent with a physical book. Paper asks nothing of you except the next page: no tabs, no glow, no gentle tug toward somewhere else. In a small flat it also does something spatial: a stack of books beside the chair turns two square metres into <em>a place for reading</em>, which is a room the flat didn't technically have a moment ago.</p>
+    <p>Keep a small, deliberately chosen stack within arm's reach rather than a whole wall you'll never finish. The point is the reaching, not the collecting. A short set of clothbound classics is the quiet cheat here: the foil-stamped spines carry the shelf visually, and unlike most decorative props, you'll actually read them across a winter.</p>
+    <div class="pick">
+      <span class="lab">Within arm's reach</span>
+      <div class="name">Clothbound classics box set</div>
+      <p>Foil-stamped, cloth-bound editions whose spines alone dress a shelf: decor that doubles as a winter's worth of reading. Keep them by the chair so the ritual is always one reach away.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/0141198419?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">A slow weekend</span>How the rituals fit a rhythm</h2>
+    <p>Rituals hold best when they belong to a loose rhythm rather than a rigid schedule. You don't need to do all five every day. Here's how a gentle weekend might layer them, as a template to bend to your own week rather than a checklist to obey.</p>
+    <div class="plan">
+      <div class="day">
+        <h3>Saturday: unhurried</h3>
+        <ul>
+          <li>A slow pot of tea with the morning pages, no phone until the page is done.</li>
+          <li>An afternoon walk, then an hour with a book and nothing scheduled after it.</li>
+          <li>Overhead light off at dusk; one lamp, one candle for the evening.</li>
+          <li>A few lines in the journal before bed: what the day was quietly good for.</li>
+        </ul>
+      </div>
+      <div class="day">
+        <h3>Sunday: the reset</h3>
+        <ul>
+          <li>A light, attentive tidy: surfaces cleared, bed changed, week's books lined up.</li>
+          <li>Windows open five minutes, then incense lit to mark the reset complete.</li>
+          <li>Plan the week loosely over a second pot: three intentions, not thirty tasks.</li>
+          <li>An early wind-down: warm light, the throw, and a chapter to close the weekend.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2><span class="kicker">The honest part</span>Making it stick</h2>
+    <p>Most rituals fail for the same undramatic reason: they were too big, or kept out of sight. So keep them small and keep them visible. Anchor each one to something you already do without thinking: the tea after dinner becomes the cue for the candle, and the candle becomes the cue for the book. Let the objects live on the counter and the table, not in cupboards. A journal you can see gets written in; a teapot on the shelf gets used.</p>
+    <p>And hold it all lightly. This is meant to make your evenings feel like more yours, not to become one more thing you're failing at. There'll be weeks you light nothing and write nothing, and that's not a broken streak. It's just a week. The rituals are still there, waiting, the moment you want them back. Slow living that punishes you for slipping isn't slow living at all; it's just another to-do list wearing a nicer jumper.</p>
+
+    <h2><span class="kicker">Slow-living questions</span>Frequently asked</h2>
+    <div class="faq">
+      <details>
+        <summary>Can I really do this in a studio or one shared room?</summary>
+        <p>Yes, and arguably it matters more there. When one room does everything, rituals are how you give the day its edges without needing separate spaces for work, rest and reading. Lighting a candle to switch the room from "office" to "evening" is a boundary you draw with attention rather than with walls, and it's exactly what a small space needs.</p>
+      </details>
+      <details>
+        <summary>Isn't "slow living" just buying more candles and notebooks?</summary>
+        <p>It can curdle into that, and it's worth being honest about it. The ritual is the free part: the pause, the page, the pot of tea. The objects here just lower the friction so the habit is easier to reach for; none of them is the point, and you can start every one of these rituals tonight with things you already own. Buy a piece only when it genuinely makes a ritual you already keep a little easier.</p>
+      </details>
+      <details>
+        <summary>How long does a ritual need to be to "count"?</summary>
+        <p>Far less than you'd think. Three lines in a journal counts. One candle and ten minutes counts. The research-backed idea worth borrowing is that small habits repeated beat big ones abandoned. A two-minute version you actually do every day will do more for you than an hour-long ritual you manage twice a month and then feel guilty about.</p>
+      </details>
+      <details>
+        <summary>What if I keep forgetting to do them?</summary>
+        <p>Then the cue is wrong, not you. A forgotten ritual almost always means it isn't anchored to an existing habit or the tools are out of sight. Move the journal onto the pillow, the candle to the middle of the table, the books beside the chair. Attach the new thing to something you never forget, like the kettle or brushing your teeth, and let that carry it until it's automatic.</p>
+      </details>
+    </div>
+
+    <p style="margin-top:2em;"><em>Keep the rituals small, keep them in sight, and let them move with you.</em> That's the whole of slow living in a rented flat: nothing permanent, nothing to lose your deposit over, and a handful of quiet minutes that make the evenings feel unmistakably like yours.</p>
+
   </div>
-</section>
+</article>
 
-<section class="edit">
+<section class="editlist">
   <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">The Edit · 6 pieces</span>
-      <h2>The slow-living ritual edit, shopped</h2>
-    </div>
-    <div class="grid">
-
-      <!-- CARD 01 — Amber apothecary candle
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/01-amber-apothecary-candle.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/01-amber-apothecary-candle.jpg" alt="Amber apothecary candle" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">01</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Atmosphere</span>
-          <h3>Amber apothecary candle</h3>
-          <p>Smoke, leather and old paper — the scent that opens academia season.</p>
-          <p class="renter">Sits on any surface.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 02 — Leather journal
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/02-leather-journal.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/02-leather-journal.jpg" alt="Leather journal" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">02</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Writing</span>
-          <h3>Leather journal</h3>
-          <p>A refillable leather journal for morning pages and reading notes.</p>
-          <p class="renter">The daily ritual anchor.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 03 — Vintage teapot set
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/03-vintage-teapot-set.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/03-vintage-teapot-set.jpg" alt="Vintage teapot set" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">03</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Tea</span>
-          <h3>Vintage teapot set</h3>
-          <p>A small ceramic pot to make the evening cup a slow one.</p>
-          <p class="renter">Pure ritual; no install.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 04 — Wool blanket
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/04-wool-blanket.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/04-wool-blanket.jpg" alt="Wool blanket" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">04</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Comfort</span>
-          <h3>Wool blanket</h3>
-          <p>A heavy wool throw for the reading chair.</p>
-          <p class="renter">Just drape it.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 05 — Brass incense holder
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/05-brass-incense-holder.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/05-brass-incense-holder.jpg" alt="Brass incense holder" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">05</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Scent</span>
-          <h3>Brass incense holder</h3>
-          <p>A little brass holder for a thread of smoke while you read.</p>
-          <p class="renter">Sits on desk or shelf.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 06 — Clothbound classics set
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/06-clothbound-classics-set.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/06-clothbound-classics-set.jpg" alt="Clothbound classics set" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">06</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Reading</span>
-          <h3>Clothbound classics set</h3>
-          <p>Old-look clothbound books to keep within arm's reach.</p>
-          <p class="renter">Decor you'll actually read.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-    </div>
+    <span class="eyebrow">The full edit</span>
+    <h2>Everything for the rituals, in one list</h2>
+    <p class="lede">The six pieces referenced above, gathered for easy shopping. Every link is an affiliate link (tag disclosed at the top); prices and stock are on Amazon.</p>
+    <ol>
+      <li><span class="en">Warm-woods crackling candle<span class="es">Atmosphere</span></span><a href="https://www.amazon.co.uk/dp/B0058WBMC0?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Handmade leather journal<span class="es">Writing</span></span><a href="https://www.amazon.co.uk/dp/B08FJ9ZD6Q?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Matte-navy six-cup teapot<span class="es">Tea</span></span><a href="https://www.amazon.co.uk/dp/B00NL7BV98?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Cosy olive-green throw<span class="es">Comfort</span></span><a href="https://www.amazon.co.uk/dp/B09VGKDQKX?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Wood &amp; brass incense holder<span class="es">Scent</span></span><a href="https://www.amazon.co.uk/dp/B00OWDYQCE?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Clothbound classics box set<span class="es">Reading</span></span><a href="https://www.amazon.co.uk/dp/0141198419?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+    </ol>
   </div>
 </section>
 
 <footer class="foot">
   <div class="wrap">
     <div class="mark">Nuvel<span>orva</span></div>
-    <p>Dressing &amp; decorating like a poet — in a rented flat. <br>
-    Affiliate disclosure: some links above are affiliate links, meaning I may earn a small commission if you buy through them, at no extra cost to you. I only include pieces that fit the look and the renter's rules. Questions? <a href="mailto:admin@nuvelorva.com">admin@nuvelorva.com</a>.</p>
+    <p>Dressing &amp; decorating like a poet, in a rented flat.<br>
+    Affiliate disclosure: some links on this page are affiliate links, meaning I may earn a small commission if you buy through them, at no extra cost to you. I only recommend pieces that fit the look and the renter's rules. Questions? <a href="mailto:admin@nuvelorva.com">admin@nuvelorva.com</a>.</p>
   </div>
 </footer>
 

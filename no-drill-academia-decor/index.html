@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Deploy: put this file as index.html in a folder named "no-drill-academia-decor" -> nuvelorva.com/no-drill-academia-decor
-     PER CARD (during the SiteStripe step): 1) src="" = Amazon product image URL  2) href="" = your affiliate link.
-     Keep rel="nofollow sponsored". Paste your Pinterest claim tag where marked. -->
-<title>No-Drill Dark Academia Decor (Keep Your Deposit) | Nuvelorva</title>
-<meta name="description" content="Peel-and-stick, removable and freestanding ways to get the dark academia look in a rental — zero damage, deposit-safe. Shop the edit.">
+<!-- nuvelorva.com/no-drill-academia-decor content-first guide; products woven inline.
+     Each product link keeps rel="nofollow sponsored". Paste your Pinterest claim tag where marked. -->
+<title>How to Get the Dark Academia Look in a Rental Without Drilling a Single Hole | Nuvelorva</title>
+<meta name="description" content="A renter's guide to a whole moody, book-lined dark academia room using only peel-and-stick, tension and adhesive. How to plan it, apply it, layer it and take it all down deposit-safe.">
 <link rel="canonical" href="https://nuvelorva.com/no-drill-academia-decor">
 <meta property="og:type" content="article">
-<meta property="og:title" content="No-Drill Dark Academia Decor for Renters">
-<meta property="og:description" content="Peel-and-stick, removable and freestanding ways to get the dark academia look in a rental — zero damage, deposit-safe. Shop the edit.">
+<meta property="og:title" content="How to Get the Dark Academia Look in a Rental Without Drilling">
+<meta property="og:description" content="A renter's guide to a whole moody, book-lined room using only peel-and-stick, tension and adhesive. Planning, application, layering and deposit-safe removal.">
 <meta property="og:image" content="https://nuvelorva.com/cover.jpg">
 <!-- PINTEREST CLAIM TAG GOES HERE -->
 <!-- <meta name="p:domain_verify" content="xxxxxxxxxxxxxxxxxxxxxxxxxx"/> -->
@@ -27,241 +26,268 @@
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{margin:0;background:var(--ink);color:var(--cream);
-    font-family:"Mulish",system-ui,sans-serif;font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;}
+    font-family:"Mulish",system-ui,sans-serif;font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;}
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .measure{max-width:680px;}
   .eyebrow{font-family:"Mulish",sans-serif;font-weight:600;text-transform:uppercase;
     letter-spacing:.28em;font-size:.72rem;color:var(--brass);}
+  a{color:var(--brass);}
   .disclosure{background:var(--espresso);border-bottom:1px solid rgba(176,141,87,.25);
     font-size:.8rem;color:var(--cream-dim);text-align:center;padding:10px 24px;}
   .disclosure b{color:var(--brass);font-weight:600;}
-  .hero{position:relative;overflow:hidden;text-align:center;padding:104px 24px 92px;}
+
+  .hero{position:relative;overflow:hidden;text-align:center;padding:100px 24px 84px;}
   .hero::before{content:"";position:absolute;top:-10%;left:50%;width:760px;height:760px;transform:translateX(-50%);
     background:radial-gradient(circle, rgba(176,141,87,.30) 0%, rgba(176,141,87,.10) 32%, rgba(31,27,23,0) 66%);
     pointer-events:none;animation:flicker 7s ease-in-out infinite;}
   @keyframes flicker{0%,100%{opacity:.85;}50%{opacity:1;}}
   .hero__inner{position:relative;}
-  .hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.6rem,6vw,4.6rem);
-    line-height:1.04;margin:.35em auto .3em;max-width:14ch;color:#F3ECDD;}
-  .hero p.dek{max-width:46ch;margin:0 auto;color:var(--cream-dim);font-size:1.05rem;}
-  .hero .rule{width:54px;height:1px;background:var(--brass);margin:30px auto 0;opacity:.7;}
-  .intro{background:var(--parchment);color:var(--inktext);padding:64px 24px;}
-  .intro .wrap{max-width:660px;}
-  .intro p{font-size:1.12rem;line-height:1.7;margin:0 0 1em;}
-  .intro p:last-child{margin-bottom:0;}
-  .intro em{font-style:italic;color:var(--oxblood);}
-  .howto{padding:72px 24px 40px;}
-  .howto h2,.edit h2{font-family:"Cormorant Garamond",serif;font-weight:500;
-    font-size:clamp(1.9rem,4vw,2.7rem);color:#F1EADB;margin:.2em 0 .1em;}
-  .howto .lede{color:var(--cream-dim);max-width:52ch;margin:0 0 36px;}
-  .steps{list-style:none;margin:0;padding:0;display:grid;gap:2px;border-top:1px solid rgba(176,141,87,.22);}
-  .steps li{display:grid;grid-template-columns:54px 1fr;gap:18px;align-items:baseline;
-    padding:20px 4px;border-bottom:1px solid rgba(176,141,87,.22);}
-  .steps .n{font-family:"Cormorant Garamond",serif;color:var(--brass);font-size:1.5rem;font-weight:500;}
-  .steps .t{color:var(--cream);}
-  .steps .t b{color:#F1EADB;font-weight:600;font-family:"Mulish";}
-  .edit{padding:56px 24px 24px;}
-  .edit .head{margin-bottom:38px;}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
-  @media(max-width:880px){.grid{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:560px){.grid{grid-template-columns:1fr;}}
-  .card{background:var(--parchment);color:var(--inktext);border-radius:2px;overflow:hidden;
-    display:flex;flex-direction:column;box-shadow:0 14px 30px rgba(0,0,0,.34);
-    transition:transform .25s ease, box-shadow .25s ease;}
-  .card:hover{transform:translateY(-5px);box-shadow:0 22px 44px rgba(0,0,0,.45);}
-  .card__plate{position:relative;aspect-ratio:4/5;
-    background:linear-gradient(135deg,var(--parchment-2),var(--parchment));
-    display:flex;align-items:flex-end;justify-content:space-between;
-    padding:14px 16px;border-bottom:1px solid rgba(36,31,26,.12);}
-  .card__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;
-    background:var(--parchment-2);}
-  .card__img.missing{display:none;}
-  .card__plate .num{font-family:"Cormorant Garamond",serif;font-size:2.6rem;line-height:1;
-    color:var(--oxblood);font-weight:500;}
-  .card__plate .swap{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
-    color:rgba(36,31,26,.42);border:1px dashed rgba(36,31,26,.30);padding:5px 8px;border-radius:2px;}
-  .card__body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1;}
-  .card__tag{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);
-    font-weight:600;margin-bottom:8px;}
-  .card h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.42rem;line-height:1.15;
-    margin:0 0 8px;color:var(--inktext);}
-  .card p{font-size:.92rem;line-height:1.55;color:#4a4138;margin:0 0 8px;}
-  .card .renter{font-size:.8rem;color:var(--oxblood);font-weight:600;margin:0 0 16px;}
-  .card .renter::before{content:"\2726 ";color:var(--brass);}
-  .btn{margin-top:auto;display:inline-block;text-align:center;background:var(--oxblood);color:#F3ECDD;
-    text-decoration:none;font-family:"Mulish";font-weight:600;font-size:.82rem;letter-spacing:.06em;
-    text-transform:uppercase;padding:12px 16px;border-radius:2px;transition:background .2s ease;}
-  .btn:hover{background:var(--oxblood-deep);}
-  .btn:focus-visible,.foot a:focus-visible{outline:2px solid var(--brass);outline-offset:3px;}
-  .foot{padding:64px 24px 48px;text-align:center;border-top:1px solid rgba(176,141,87,.22);margin-top:48px;}
+  .hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.5rem,5.4vw,4.2rem);
+    line-height:1.06;margin:.35em auto .3em;max-width:18ch;color:#F3ECDD;}
+  .hero p.dek{max-width:52ch;margin:0 auto;color:var(--cream-dim);font-size:1.05rem;}
+  .hero .meta{margin-top:22px;color:var(--cream-dim);font-size:.8rem;letter-spacing:.04em;}
+  .hero .rule{width:54px;height:1px;background:var(--brass);margin:26px auto 0;opacity:.7;}
+
+  /* article body on parchment for readability */
+  .article{background:var(--parchment);color:var(--inktext);padding:66px 24px 40px;}
+  .article .measure{margin:0 auto;}
+  .article p{font-size:1.1rem;line-height:1.75;margin:0 0 1.15em;}
+  .article em{font-style:italic;color:var(--oxblood);}
+  .article h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(1.8rem,3.6vw,2.5rem);
+    color:var(--oxblood-deep);margin:1.9em 0 .35em;line-height:1.12;}
+  .article h2:first-of-type{margin-top:.3em;}
+  .article h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.4rem;color:var(--inktext);
+    margin:1.5em 0 .3em;}
+  .article .kicker{display:block;font-family:"Mulish";font-weight:600;text-transform:uppercase;
+    letter-spacing:.22em;font-size:.7rem;color:var(--sage);margin-bottom:.5em;}
+  .article ul.plain{margin:0 0 1.2em;padding-left:1.1em;}
+  .article ul.plain li{margin:.3em 0;line-height:1.65;}
+  .rule-list{list-style:none;margin:1em 0 1.4em;padding:0;}
+  .rule-list li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:baseline;
+    padding:14px 0;border-bottom:1px solid rgba(36,31,26,.14);}
+  .rule-list li:first-child{border-top:1px solid rgba(36,31,26,.14);}
+  .rule-list .n{font-family:"Cormorant Garamond",serif;color:var(--oxblood);font-size:1.4rem;}
+  .rule-list b{color:var(--inktext);}
+
+  /* inline product recommendation */
+  .pick{border-left:3px solid var(--brass);background:rgba(176,141,87,.10);
+    padding:14px 18px;margin:1.3em 0 1.5em;border-radius:2px;}
+  .pick .lab{font-family:"Mulish";font-weight:600;text-transform:uppercase;letter-spacing:.16em;
+    font-size:.64rem;color:var(--sage);}
+  .pick .name{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.2rem;color:var(--inktext);
+    margin:.15em 0 .2em;}
+  .pick p{font-size:.96rem;line-height:1.6;margin:0 0 .7em;color:#4a4138;}
+  .pick a.shop{display:inline-block;background:var(--oxblood);color:#F3ECDD;text-decoration:none;
+    font-family:"Mulish";font-weight:600;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;
+    padding:9px 15px;border-radius:2px;transition:background .2s ease;}
+  .pick a.shop:hover{background:var(--oxblood-deep);}
+
+  /* weekend plan */
+  .plan{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:1.4em 0 1.6em;}
+  @media(max-width:640px){.plan{grid-template-columns:1fr;}}
+  .plan .day{background:var(--parchment-2);border-radius:3px;padding:20px 22px;}
+  .plan .day h3{margin:.1em 0 .5em;color:var(--oxblood-deep);}
+  .plan .day ul{margin:0;padding-left:1.05em;}
+  .plan .day li{margin:.35em 0;font-size:.98rem;}
+
+  /* faq */
+  .faq{margin:1em 0 1.4em;}
+  .faq details{border-bottom:1px solid rgba(36,31,26,.16);padding:6px 0;}
+  .faq summary{cursor:pointer;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.22rem;
+    color:var(--inktext);padding:12px 0;list-style:none;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::before{content:"+";color:var(--brass);font-family:"Mulish";margin-right:12px;font-weight:600;}
+  .faq details[open] summary::before{content:"\2013";}
+  .faq details p{margin:0 0 14px;font-size:1.02rem;}
+
+  /* full edit list */
+  .editlist{background:var(--espresso);color:var(--cream);padding:60px 24px 20px;}
+  .editlist h2{font-family:"Cormorant Garamond",serif;font-weight:500;color:#F1EADB;
+    font-size:clamp(1.8rem,4vw,2.5rem);margin:.1em 0 .1em;}
+  .editlist .lede{color:var(--cream-dim);max-width:56ch;margin:0 0 30px;}
+  .editlist ol{list-style:none;counter-reset:e;margin:0;padding:0;
+    display:grid;grid-template-columns:1fr 1fr;gap:2px 40px;}
+  @media(max-width:680px){.editlist ol{grid-template-columns:1fr;}}
+  .editlist li{counter-increment:e;display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;
+    padding:14px 0;border-bottom:1px solid rgba(176,141,87,.20);}
+  .editlist li::before{content:counter(e,decimal-leading-zero);font-family:"Cormorant Garamond",serif;
+    color:var(--brass);font-size:1.15rem;}
+  .editlist .en{color:#F1EADB;}
+  .editlist .es{font-size:.72rem;color:var(--sage);display:block;letter-spacing:.14em;text-transform:uppercase;}
+  .editlist a{color:var(--brass);text-decoration:none;font-weight:600;font-size:.76rem;letter-spacing:.06em;
+    text-transform:uppercase;white-space:nowrap;}
+  .editlist a:hover{text-decoration:underline;}
+
+  .foot{padding:56px 24px 48px;text-align:center;border-top:1px solid rgba(176,141,87,.22);}
   .foot .mark{font-family:"Cormorant Garamond",serif;font-size:1.6rem;color:#F1EADB;letter-spacing:.02em;}
   .foot .mark span{color:var(--brass);}
-  .foot p{max-width:54ch;margin:14px auto 0;color:var(--cream-dim);font-size:.86rem;}
+  .foot p{max-width:58ch;margin:14px auto 0;color:var(--cream-dim);font-size:.86rem;}
   .foot a{color:var(--brass);}
-  @media(prefers-reduced-motion:reduce){.hero::before{animation:none;}html{scroll-behavior:auto;}.card{transition:none;}}
+  a:focus-visible{outline:2px solid var(--brass);outline-offset:3px;}
+  @media(prefers-reduced-motion:reduce){.hero::before{animation:none;}html{scroll-behavior:auto;}}
 </style>
 </head>
 <body>
 
 <div class="disclosure">
-  This edit contains <b>affiliate links</b>. If you buy through them I may earn a small commission, at no extra cost to you — it never changes what makes the list.
+  This guide contains <b>affiliate links</b>. If you buy through them I may earn a small commission, at no extra cost to you, and it never changes what goes on the list.
 </div>
 
 <header class="hero">
   <div class="hero__inner">
-    <span class="eyebrow">The Renter's Edit · Nothing That Loses Your Deposit</span>
-    <h1>Dark academia decor that leaves no mark.</h1>
-    <p class="dek">Peel-off, stick-on and freestanding swaps that give a rental that moody, book-lined look — and come away clean when you leave.</p>
+    <span class="eyebrow">Poetcore Living · A Renter's Guide</span>
+    <h1>How to get the dark academia look in a rental, without drilling a single hole</h1>
+    <p class="dek">A whole room turned moody and book-lined using only what peels, wedges and sticks, then comes away clean the day the lease ends.</p>
+    <div class="meta">By Nuvelorva · A 9-minute read · Small-space &amp; renter-tested</div>
     <div class="rule"></div>
   </div>
 </header>
 
-<section class="intro">
-  <div class="wrap">
-    <p>You can get the whole academia mood without a single hole in the wall. The trick is <em>adhesive, tension and gravity</em> instead of screws — drama that peels away when the lease ends.</p>
-    <p>Every piece here is landlord-proof and renter-tested. Build it this weekend; take it with you next time. Here's the edit.</p>
-  </div>
-</section>
+<article class="article">
+  <div class="measure">
 
-<section class="howto">
-  <div class="wrap">
-    <span class="eyebrow">First, the renter's rules</span>
-    <h2>How to decorate damage-free</h2>
-    <p class="lede">Five no-drill moves that keep every wall intact.</p>
-    <ol class="steps">
-      <li><span class="n">1</span><span class="t"><b>Peel, don't paint.</b> Removable wallpaper on one wall does the heavy lifting — and lifts off clean.</span></li>
-      <li><span class="n">2</span><span class="t"><b>Stick the lights.</b> Battery or adhesive sconces give candlelit walls with zero wiring.</span></li>
-      <li><span class="n">3</span><span class="t"><b>Tension, don't screw.</b> A tension rod hangs curtains and closes off a nook without a fixing.</span></li>
-      <li><span class="n">4</span><span class="t"><b>Hang on strips.</b> Damage-free strips and hooks hold frames and art — save the packaging to remove them tidily.</span></li>
-      <li><span class="n">5</span><span class="t"><b>Lean and stack.</b> Leaning shelves and frames need nothing but a wall to rest on.</span></li>
+    <p>Every dark academia room you've saved was almost certainly photographed in a house someone owns. The panelling is nailed on, the sconces are hard-wired, the shelves are bolted into brick. Beautiful, and completely useless to a renter holding a tenancy agreement that says <em>no fixings, no nails, make good on exit</em>. The question that actually matters when you can't touch the walls is a different one: <em>how much of that atmosphere can you build with adhesive, tension and gravity alone?</em></p>
+
+    <p>More than you'd think, nearly the whole thing. The dark academia look is mostly a matter of surfaces and shadow: a moody wall, warm low light, art hung at eye level, and a corner you can close off into its own hushed world. Not one of those needs a drill. What follows is the full method for a whole room rather than a single corner. It covers how to plan it so you don't waste a roll of wallpaper, how to apply the removable stuff so it actually stays up, how to layer it so the result reads as designed rather than stuck-on, and how to strip it all back to bare walls in an afternoon without forfeiting a penny of your deposit. The pieces I lean on are recommended in context as you go, and gathered into one list at the end if you'd rather just shop.</p>
+
+    <h2><span class="kicker">Start here</span>Plan the room before you peel</h2>
+    <p>Removable does not mean foolproof, and the most common renter mistake is buying first and measuring never. Before anything goes on a wall, do three unglamorous things. First, <em>survey your surfaces</em>: peel-and-stick clings best to smooth, matte, fully-cured emulsion. Glossy paint, textured woodchip, freshly-painted walls (give new paint a good three to four weeks) and anything flaking are where adhesive either won't grip or, worse, grips too well and takes the paint with it on the way out.</p>
+    <p>Second, <em>choose your feature wall</em>. You almost never want to wrap a whole room in dark pattern, since in a small flat it closes in fast. Pick one wall the eye lands on, usually behind the bed, the sofa or a desk, and let it carry the drama while the others stay quiet. Third, <em>measure and test</em>. Note your wall's height and width, add ten per cent for pattern-matching, and before you commit a full roll, stick a test swatch in a hidden spot for a week, then peel it. If it lifts clean, you're safe; if it pulls paint, you've learnt it on an offcut rather than the whole wall.</p>
+
+    <h2><span class="kicker">The renter's rules</span>Five no-drill principles</h2>
+    <p>Everything in this guide obeys five constraints. Learn these and you can improvise the rest of a room. They're the difference between a flat you love and a make-good invoice at checkout.</p>
+    <ol class="rule-list">
+      <li><span class="n">1</span><span><b>Peel, don't paint.</b> Removable wallpaper and tile stickers do the heavy transformation and lift off clean, with no repainting and no forfeited deposit.</span></li>
+      <li><span class="n">2</span><span><b>Stick the light, don't wire it.</b> Battery, adhesive-mounted sconces give you candlelit walls with no electrician and nothing screwed in.</span></li>
+      <li><span class="n">3</span><span><b>Tension, don't screw.</b> A rod wedged between two walls hangs curtains and closes off a nook with pressure alone.</span></li>
+      <li><span class="n">4</span><span><b>Hang on strips and hooks.</b> Damage-free adhesive strips and removable hooks hold art and lights level. Keep the packaging so takedown is tidy.</span></li>
+      <li><span class="n">5</span><span><b>Go slow on the way out.</b> Warm every adhesive before you peel, work at a low angle, and future-you in an empty flat keeps the deposit.</span></li>
     </ol>
+
+    <h2><span class="kicker">Layer one</span>The walls, without a tin of paint</h2>
+    <p>The single biggest change you can make to a rented room is the wall behind it, and you can do it with a craft knife and an afternoon rather than a decorator. Peel-and-stick wallpaper on your chosen feature wall is the move that reframes everything else in the room. The application is where people go wrong, so be methodical: clean and dry the wall, drop a plumb line or use a level for your first vertical strip, then peel back only the top few inches of backing, align, and smooth <em>from the centre outward</em> with a felt edge or a clean cloth, chasing bubbles to the nearest edge as you unpeel the rest. Overlap seams by a millimetre or two so no gap opens as it settles.</p>
+    <div class="pick">
+      <span class="lab">The feature wall</span>
+      <div class="name">Peel-and-stick botanical wallpaper</div>
+      <p>A dark green-and-gold botanical print that turns one wall into the whole room's mood, the highest-impact renter move there is. Removable, and clean to take down if you warm the edge and go slowly.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B0DW953CX3?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+    <p>Wallpaper isn't the only removable surface, and it isn't the only wall worth dressing. For a smaller hit of pattern (the back of an alcove, a fireplace surround, a splashback behind a desk), peel-and-stick tiles bring a hand-glazed, slightly worn texture that plain paper can't. Used sparingly they read as an <em>architectural</em> detail rather than a sticker: a suggestion that the room has history it doesn't strictly have.</p>
+    <div class="pick">
+      <span class="lab">The accent surface</span>
+      <div class="name">Vintage-green peel-and-stick tiles</div>
+      <p>Moody Moroccan-pattern tile stickers for a small run (an alcove back, a hearth, a desk splashback) that add worn, patterned texture. Removable and renter-safe; best on smooth, non-porous surfaces.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B0FT13MZJ9?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Layer two</span>Light it warm, wire nothing</h2>
+    <p>Dark academia is a lighting genre before it's a furniture one. The whole mood is <em>low, warm and pooled</em> rather than bright, cool and even, and the detail that quietly signals "this room was designed" is a wall light. In a rental you can't have the hard-wired library sconce, but you can fake it convincingly. Battery, adhesive-mounted sconces throw a soft up-light onto the wall, run on a switch or a remote, and mount with a peel pad that comes away like a picture hook. Set them at roughly eye level or a little above, flanking a mirror or the feature wall, and reach for a warm bulb tone (look for "warm white" or "amber", never "daylight").</p>
+    <div class="pick">
+      <span class="lab">The wall glow</span>
+      <div class="name">Stick-on battery wall sconces</div>
+      <p>Dimmable gold sconces that peel-mount to the wall and throw a soft, candlelit up-light. They're the fake hard-wired detail that makes a room look considered, with zero wiring and nothing screwed in.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B0FP2NCSMN?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Layer three</span>Art on the walls, hung dead level</h2>
+    <p>A book-lined room needs framed things on the walls (botanical prints, old maps, a dim portrait or two), and this is exactly where renters lose deposits to a rash of nail holes. Don't. Damage-free picture strips are the honest answer for anything flat and framed: they hang art level, hold it against the wall, and release with a slow downward pull that leaves no mark. The trick most people miss is <em>weight</em>. Check your frame against the pack's rating, use enough strips, and press firmly for thirty seconds, then leave it an hour before letting go. Wipe the wall with rubbing alcohol first, never a household spray, or the adhesive won't bond.</p>
+    <div class="pick">
+      <span class="lab">The frames</span>
+      <div class="name">Command damage-free picture strips</div>
+      <p>Genuine 3M strips that hang framed art perfectly level and peel away without a hole or a scuff. Match the pack rating to your frame's weight and press well, and that's the whole secret to them staying up.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B086N961L2?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+    <p>Strips are perfect for flat frames, but a room has things that need to <em>hang</em>: a trailing plant in the corner, a string of warm fairy lights along the picture rail, a heavier mirror, a curtain you'd rather not tension. For those, self-adhesive hooks do the job a screw and rawlplug otherwise would, in matte black that disappears against a dark wall. Buy a size up in weight rating from what you think you need, mount on a smooth surface, and give the adhesive the full day it asks for before you load them.</p>
+    <div class="pick">
+      <span class="lab">The hanging</span>
+      <div class="name">Self-adhesive matte-black hooks</div>
+      <p>Heavy-duty stick-on hooks for trailing plants, fairy lights, a mirror or a curtain, everything a frame strip can't hold. No holes, and they peel off clean when you leave. Give them a day to cure before loading.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B07B7G7J4D?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Layer four</span>Zone the room and close it off</h2>
+    <p>The last thing that separates a moody room from a mood-<em>board</em> is a sense of enclosure: a reading corner you can draw closed, a bed you can curtain off, a studio you can visually split into "living" and "sleeping". In a rental you get all of that from a single tension rod: wedged between two walls or inside an alcove by pressure alone, it takes a heavy curtain with no bracket and no drilling. Hang a weighty velvet or blackout panel and you've bought yourself both privacy and one more soft, light-swallowing surface, exactly what the aesthetic wants. For the heaviest curtains, pair the rod with a couple of the adhesive hooks above to stop any sag.</p>
+    <div class="pick">
+      <span class="lab">The zoning</span>
+      <div class="name">No-drill tension curtain rod</div>
+      <p>A matte-black rod that wedges into a doorway, alcove or between two walls under its own tension. Hang a heavy curtain to close off a nook or split a studio, with nothing screwed to anything.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B0BY2QZYT9?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Do it in a weekend</span>A two-part build plan</h2>
+    <p>You don't need a week off. Here's the order that works: surfaces and structure first, everything soft and styled second, so nothing you place early gets in the way of the wet-work.</p>
+    <div class="plan">
+      <div class="day">
+        <h3>Part one: the surfaces</h3>
+        <ul>
+          <li>Wipe the feature wall down; let it dry fully.</li>
+          <li>Hang the peel-and-stick wallpaper, plumb-line first, smoothing centre outward.</li>
+          <li>Run the tile stickers on your one accent surface.</li>
+          <li>Wedge the tension rod and test its grip before loading.</li>
+          <li>Leave every adhesive to settle overnight.</li>
+        </ul>
+      </div>
+      <div class="day">
+        <h3>Part two: the mood</h3>
+        <ul>
+          <li>Peel-mount the battery sconces at eye level; set them warm and dim.</li>
+          <li>Hang framed art on picture strips: level, pressed, left to bond.</li>
+          <li>Fix the adhesive hooks for plants, fairy lights and the mirror.</li>
+          <li>Hang the heavy curtain on the rod and draw the nook closed.</li>
+          <li>Kill the big light, switch on the sconces, and live in it a while.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2><span class="kicker">The part everyone forgets</span>Taking it down without losing your deposit</h2>
+    <p>The whole reason to build this way is that moving out is uneventful, and a few habits make it so. Warm every adhesive before you peel (wallpaper edges, tile stickers, sconce pads, hook and strip backings) with a hairdryer on low; heat releases the glue instead of taking the paint. Peel <em>slowly</em>, at a shallow angle, folding the material back on itself rather than pulling straight out from the wall. For Command strips and hooks, follow the stretch-release instructions exactly: pull the tab slowly straight down, and the bond gives way with no mark. Release the tension rod gently so it doesn't ping a dent into the plaster. Keep the original packaging so strips and rods travel with you, and do a daylight walk-round the week before checkout. At that point any faint mark is a five-minute fix, not a line on the deductions.</p>
+
+    <h2><span class="kicker">Renter questions</span>Frequently asked</h2>
+    <div class="faq">
+      <details>
+        <summary>Will peel-and-stick wallpaper actually come off cleanly?</summary>
+        <p>On a smooth, fully-cured, matte-painted wall, generally yes. Warm the edge with a hairdryer and peel slowly. The two things that cause lifting are fresh paint (let new paint cure for three to four weeks first) and textured, glossy or flaking walls. If you're at all unsure, stick a test swatch in a hidden spot, leave it a week, and remove it before committing to the whole wall.</p>
+      </details>
+      <details>
+        <summary>How much weight will adhesive hooks and strips really hold?</summary>
+        <p>More than most people expect, but only if you respect the rating on the pack and prep the surface. Wipe the spot with rubbing alcohol (not a household spray, which leaves a residue), press firmly for thirty seconds, and give the adhesive a full hour (a full day for heavier hooks) to cure before you hang anything. When in doubt, size up and use more than one.</p>
+      </details>
+      <details>
+        <summary>Can I do all this in a studio or a single room?</summary>
+        <p>Yes, a studio is where these tricks earn their keep. One feature wall behind the bed carries the mood, a tension rod curtains the sleeping half off from the living half, and stick-on sconces light it without an electrician. Keep the pattern to a single wall so a small room doesn't close in, and let the other walls stay quiet.</p>
+      </details>
+      <details>
+        <summary>What's worth doing first if I only tackle one thing?</summary>
+        <p>The feature wall, then the light. Removable wallpaper on one wall changes the whole room more than any other single move, and warm, low, wall-mounted light is what turns "decorated" into "atmospheric". Art, plants and curtains can all come later and still look considered once the wall and the light are right.</p>
+      </details>
+    </div>
+
+    <p style="margin-top:2em;"><em>Build it this weekend, and take every trace of it with you when the lease ends.</em> That's the whole promise of decorating like a renter who plans to move: nothing permanent, nothing lost, and a room worth coming home to in the meantime.</p>
+
   </div>
-</section>
+</article>
 
-<section class="edit">
+<section class="editlist">
   <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">The Edit · 6 pieces</span>
-      <h2>The no-drill academia edit, shopped</h2>
-    </div>
-    <div class="grid">
-
-      <!-- CARD 01 — Peel-and-stick wallpaper
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/01-peel-and-stick-wallpaper.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/01-peel-and-stick-wallpaper.jpg" alt="Peel-and-stick wallpaper" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">01</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Walls</span>
-          <h3>Peel-and-stick wallpaper</h3>
-          <p>A dark floral or library motif that transforms a wall and peels away without a mark.</p>
-          <p class="renter">Fully removable.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 02 — Removable adhesive hooks
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/02-removable-adhesive-hooks.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/02-removable-adhesive-hooks.jpg" alt="Removable adhesive hooks" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">02</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Hanging</span>
-          <h3>Removable adhesive hooks</h3>
-          <p>Heavy-duty damage-free hooks for frames, lights and curtains.</p>
-          <p class="renter">No holes; peels off clean.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 03 — Stick-on wall sconces
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/03-stick-on-wall-sconces.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/03-stick-on-wall-sconces.jpg" alt="Stick-on wall sconces" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">03</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Lighting</span>
-          <h3>Stick-on wall sconces</h3>
-          <p>Battery sconces that throw warm up-light for a candlelit look.</p>
-          <p class="renter">Adhesive mount; no wiring.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 04 — Tension-rod curtain
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/04-tension-rod-curtain.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/04-tension-rod-curtain.jpg" alt="Tension-rod curtain" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">04</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Privacy</span>
-          <h3>Tension-rod curtain</h3>
-          <p>A heavy curtain on a tension rod to close off a nook.</p>
-          <p class="renter">Wedges in — no drilling.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 05 — Damage-free picture strips
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/05-damage-free-picture-strips.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/05-damage-free-picture-strips.jpg" alt="Damage-free picture strips" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">05</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Frames</span>
-          <h3>Damage-free picture strips</h3>
-          <p>Command-style strips to hang art level and remove it cleanly.</p>
-          <p class="renter">No wall damage.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 06 — Peel-and-stick tiles
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/06-peel-and-stick-tiles.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/06-peel-and-stick-tiles.jpg" alt="Peel-and-stick tiles" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">06</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Walls</span>
-          <h3>Peel-and-stick tiles</h3>
-          <p>Vintage-look adhesive tiles for a splash of pattern.</p>
-          <p class="renter">Removable; renter-safe.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-    </div>
+    <span class="eyebrow">The full edit</span>
+    <h2>Everything in the room, in one list</h2>
+    <p class="lede">The six no-drill pieces referenced above, gathered for easy shopping. Every link is an affiliate link (tag disclosed at the top); prices and stock are on Amazon.</p>
+    <ol>
+      <li><span class="en">Peel-and-stick botanical wallpaper<span class="es">Walls</span></span><a href="https://www.amazon.co.uk/dp/B0DW953CX3?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Vintage-green peel-and-stick tiles<span class="es">Walls</span></span><a href="https://www.amazon.co.uk/dp/B0FT13MZJ9?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Stick-on battery wall sconces<span class="es">Lighting</span></span><a href="https://www.amazon.co.uk/dp/B0FP2NCSMN?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Command damage-free picture strips<span class="es">Frames</span></span><a href="https://www.amazon.co.uk/dp/B086N961L2?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Self-adhesive matte-black hooks<span class="es">Hanging</span></span><a href="https://www.amazon.co.uk/dp/B07B7G7J4D?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">No-drill tension curtain rod<span class="es">Privacy</span></span><a href="https://www.amazon.co.uk/dp/B0BY2QZYT9?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+    </ol>
   </div>
 </section>
 
 <footer class="foot">
   <div class="wrap">
     <div class="mark">Nuvel<span>orva</span></div>
-    <p>Dressing &amp; decorating like a poet — in a rented flat. <br>
-    Affiliate disclosure: some links above are affiliate links, meaning I may earn a small commission if you buy through them, at no extra cost to you. I only include pieces that fit the look and the renter's rules. Questions? <a href="mailto:admin@nuvelorva.com">admin@nuvelorva.com</a>.</p>
+    <p>Dressing &amp; decorating like a poet, in a rented flat.<br>
+    Affiliate disclosure: some links on this page are affiliate links, meaning I may earn a small commission if you buy through them, at no extra cost to you. I only recommend pieces that fit the look and the renter's rules. Questions? <a href="mailto:admin@nuvelorva.com">admin@nuvelorva.com</a>.</p>
   </div>
 </footer>
 

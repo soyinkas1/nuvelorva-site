@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Deploy: put this file as index.html in a folder named "dark-academia-bookshelf-styling" -> nuvelorva.com/dark-academia-bookshelf-styling
-     PER CARD (during the SiteStripe step): 1) src="" = Amazon product image URL  2) href="" = your affiliate link.
-     Keep rel="nofollow sponsored". Paste your Pinterest claim tag where marked. -->
-<title>How to Style a Dark Academia Bookshelf (Small-Room Guide) | Nuvelorva</title>
-<meta name="description" content="Style a moody, book-lined dark academia shelf in a small room — brass bookends, vintage props, warm light and layering tricks. Shop the edit.">
+<!-- nuvelorva.com/dark-academia-bookshelf-styling. Content-first guide; products woven inline.
+     Each product link keeps rel="nofollow sponsored". Paste your Pinterest claim tag where marked. -->
+<title>How to Style a Dark Academia Bookshelf So It Looks Collected, Not Bought | Nuvelorva</title>
+<meta name="description" content="A styling guide to arranging a moody, dark academia bookshelf in a small rented room: the vertical/horizontal mix, triangles, negative space, colour and the 60/30/10 of books, objects and air. Renter-safe, no drilling.">
 <link rel="canonical" href="https://nuvelorva.com/dark-academia-bookshelf-styling">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to Style a Dark Academia Bookshelf in a Small Room">
-<meta property="og:description" content="Style a moody, book-lined dark academia shelf in a small room — brass bookends, vintage props, warm light and layering tricks. Shop the edit.">
+<meta property="og:title" content="How to Style a Dark Academia Bookshelf So It Looks Collected, Not Bought">
+<meta property="og:description" content="A styling guide to a moody, book-lined shelf in a small rented room: the mix, the triangles, the negative space, the colour and the 60/30/10 rule. Renter-safe.">
 <meta property="og:image" content="https://nuvelorva.com/cover.jpg">
 <!-- PINTEREST CLAIM TAG GOES HERE -->
 <!-- <meta name="p:domain_verify" content="xxxxxxxxxxxxxxxxxxxxxxxxxx"/> -->
@@ -27,241 +26,266 @@
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{margin:0;background:var(--ink);color:var(--cream);
-    font-family:"Mulish",system-ui,sans-serif;font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;}
+    font-family:"Mulish",system-ui,sans-serif;font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;}
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .measure{max-width:680px;}
   .eyebrow{font-family:"Mulish",sans-serif;font-weight:600;text-transform:uppercase;
     letter-spacing:.28em;font-size:.72rem;color:var(--brass);}
+  a{color:var(--brass);}
   .disclosure{background:var(--espresso);border-bottom:1px solid rgba(176,141,87,.25);
     font-size:.8rem;color:var(--cream-dim);text-align:center;padding:10px 24px;}
   .disclosure b{color:var(--brass);font-weight:600;}
-  .hero{position:relative;overflow:hidden;text-align:center;padding:104px 24px 92px;}
+
+  .hero{position:relative;overflow:hidden;text-align:center;padding:100px 24px 84px;}
   .hero::before{content:"";position:absolute;top:-10%;left:50%;width:760px;height:760px;transform:translateX(-50%);
     background:radial-gradient(circle, rgba(176,141,87,.30) 0%, rgba(176,141,87,.10) 32%, rgba(31,27,23,0) 66%);
     pointer-events:none;animation:flicker 7s ease-in-out infinite;}
   @keyframes flicker{0%,100%{opacity:.85;}50%{opacity:1;}}
   .hero__inner{position:relative;}
-  .hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.6rem,6vw,4.6rem);
-    line-height:1.04;margin:.35em auto .3em;max-width:14ch;color:#F3ECDD;}
-  .hero p.dek{max-width:46ch;margin:0 auto;color:var(--cream-dim);font-size:1.05rem;}
-  .hero .rule{width:54px;height:1px;background:var(--brass);margin:30px auto 0;opacity:.7;}
-  .intro{background:var(--parchment);color:var(--inktext);padding:64px 24px;}
-  .intro .wrap{max-width:660px;}
-  .intro p{font-size:1.12rem;line-height:1.7;margin:0 0 1em;}
-  .intro p:last-child{margin-bottom:0;}
-  .intro em{font-style:italic;color:var(--oxblood);}
-  .howto{padding:72px 24px 40px;}
-  .howto h2,.edit h2{font-family:"Cormorant Garamond",serif;font-weight:500;
-    font-size:clamp(1.9rem,4vw,2.7rem);color:#F1EADB;margin:.2em 0 .1em;}
-  .howto .lede{color:var(--cream-dim);max-width:52ch;margin:0 0 36px;}
-  .steps{list-style:none;margin:0;padding:0;display:grid;gap:2px;border-top:1px solid rgba(176,141,87,.22);}
-  .steps li{display:grid;grid-template-columns:54px 1fr;gap:18px;align-items:baseline;
-    padding:20px 4px;border-bottom:1px solid rgba(176,141,87,.22);}
-  .steps .n{font-family:"Cormorant Garamond",serif;color:var(--brass);font-size:1.5rem;font-weight:500;}
-  .steps .t{color:var(--cream);}
-  .steps .t b{color:#F1EADB;font-weight:600;font-family:"Mulish";}
-  .edit{padding:56px 24px 24px;}
-  .edit .head{margin-bottom:38px;}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
-  @media(max-width:880px){.grid{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:560px){.grid{grid-template-columns:1fr;}}
-  .card{background:var(--parchment);color:var(--inktext);border-radius:2px;overflow:hidden;
-    display:flex;flex-direction:column;box-shadow:0 14px 30px rgba(0,0,0,.34);
-    transition:transform .25s ease, box-shadow .25s ease;}
-  .card:hover{transform:translateY(-5px);box-shadow:0 22px 44px rgba(0,0,0,.45);}
-  .card__plate{position:relative;aspect-ratio:4/5;
-    background:linear-gradient(135deg,var(--parchment-2),var(--parchment));
-    display:flex;align-items:flex-end;justify-content:space-between;
-    padding:14px 16px;border-bottom:1px solid rgba(36,31,26,.12);}
-  .card__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;
-    background:var(--parchment-2);}
-  .card__img.missing{display:none;}
-  .card__plate .num{font-family:"Cormorant Garamond",serif;font-size:2.6rem;line-height:1;
-    color:var(--oxblood);font-weight:500;}
-  .card__plate .swap{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
-    color:rgba(36,31,26,.42);border:1px dashed rgba(36,31,26,.30);padding:5px 8px;border-radius:2px;}
-  .card__body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1;}
-  .card__tag{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);
-    font-weight:600;margin-bottom:8px;}
-  .card h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.42rem;line-height:1.15;
-    margin:0 0 8px;color:var(--inktext);}
-  .card p{font-size:.92rem;line-height:1.55;color:#4a4138;margin:0 0 8px;}
-  .card .renter{font-size:.8rem;color:var(--oxblood);font-weight:600;margin:0 0 16px;}
-  .card .renter::before{content:"\2726 ";color:var(--brass);}
-  .btn{margin-top:auto;display:inline-block;text-align:center;background:var(--oxblood);color:#F3ECDD;
-    text-decoration:none;font-family:"Mulish";font-weight:600;font-size:.82rem;letter-spacing:.06em;
-    text-transform:uppercase;padding:12px 16px;border-radius:2px;transition:background .2s ease;}
-  .btn:hover{background:var(--oxblood-deep);}
-  .btn:focus-visible,.foot a:focus-visible{outline:2px solid var(--brass);outline-offset:3px;}
-  .foot{padding:64px 24px 48px;text-align:center;border-top:1px solid rgba(176,141,87,.22);margin-top:48px;}
+  .hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.5rem,5.4vw,4.2rem);
+    line-height:1.06;margin:.35em auto .3em;max-width:18ch;color:#F3ECDD;}
+  .hero p.dek{max-width:52ch;margin:0 auto;color:var(--cream-dim);font-size:1.05rem;}
+  .hero .meta{margin-top:22px;color:var(--cream-dim);font-size:.8rem;letter-spacing:.04em;}
+  .hero .rule{width:54px;height:1px;background:var(--brass);margin:26px auto 0;opacity:.7;}
+
+  /* article body on parchment for readability */
+  .article{background:var(--parchment);color:var(--inktext);padding:66px 24px 40px;}
+  .article .measure{margin:0 auto;}
+  .article p{font-size:1.1rem;line-height:1.75;margin:0 0 1.15em;}
+  .article em{font-style:italic;color:var(--oxblood);}
+  .article h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(1.8rem,3.6vw,2.5rem);
+    color:var(--oxblood-deep);margin:1.9em 0 .35em;line-height:1.12;}
+  .article h2:first-of-type{margin-top:.3em;}
+  .article h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.4rem;color:var(--inktext);
+    margin:1.5em 0 .3em;}
+  .article .kicker{display:block;font-family:"Mulish";font-weight:600;text-transform:uppercase;
+    letter-spacing:.22em;font-size:.7rem;color:var(--sage);margin-bottom:.5em;}
+  .article ul.plain{margin:0 0 1.2em;padding-left:1.1em;}
+  .article ul.plain li{margin:.3em 0;line-height:1.65;}
+  .rule-list{list-style:none;margin:1em 0 1.4em;padding:0;}
+  .rule-list li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:baseline;
+    padding:14px 0;border-bottom:1px solid rgba(36,31,26,.14);}
+  .rule-list li:first-child{border-top:1px solid rgba(36,31,26,.14);}
+  .rule-list .n{font-family:"Cormorant Garamond",serif;color:var(--oxblood);font-size:1.4rem;}
+  .rule-list b{color:var(--inktext);}
+
+  /* inline product recommendation */
+  .pick{border-left:3px solid var(--brass);background:rgba(176,141,87,.10);
+    padding:14px 18px;margin:1.3em 0 1.5em;border-radius:2px;}
+  .pick .lab{font-family:"Mulish";font-weight:600;text-transform:uppercase;letter-spacing:.16em;
+    font-size:.64rem;color:var(--sage);}
+  .pick .name{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.2rem;color:var(--inktext);
+    margin:.15em 0 .2em;}
+  .pick p{font-size:.96rem;line-height:1.6;margin:0 0 .7em;color:#4a4138;}
+  .pick a.shop{display:inline-block;background:var(--oxblood);color:#F3ECDD;text-decoration:none;
+    font-family:"Mulish";font-weight:600;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;
+    padding:9px 15px;border-radius:2px;transition:background .2s ease;}
+  .pick a.shop:hover{background:var(--oxblood-deep);}
+
+  /* afternoon plan */
+  .plan{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:1.4em 0 1.6em;}
+  @media(max-width:640px){.plan{grid-template-columns:1fr;}}
+  .plan .day{background:var(--parchment-2);border-radius:3px;padding:20px 22px;}
+  .plan .day h3{margin:.1em 0 .5em;color:var(--oxblood-deep);}
+  .plan .day ul{margin:0;padding-left:1.05em;}
+  .plan .day li{margin:.35em 0;font-size:.98rem;}
+
+  /* faq */
+  .faq{margin:1em 0 1.4em;}
+  .faq details{border-bottom:1px solid rgba(36,31,26,.16);padding:6px 0;}
+  .faq summary{cursor:pointer;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.22rem;
+    color:var(--inktext);padding:12px 0;list-style:none;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::before{content:"+";color:var(--brass);font-family:"Mulish";margin-right:12px;font-weight:600;}
+  .faq details[open] summary::before{content:"\2013";}
+  .faq details p{margin:0 0 14px;font-size:1.02rem;}
+
+  /* full edit list */
+  .editlist{background:var(--espresso);color:var(--cream);padding:60px 24px 20px;}
+  .editlist h2{font-family:"Cormorant Garamond",serif;font-weight:500;color:#F1EADB;
+    font-size:clamp(1.8rem,4vw,2.5rem);margin:.1em 0 .1em;}
+  .editlist .lede{color:var(--cream-dim);max-width:56ch;margin:0 0 30px;}
+  .editlist ol{list-style:none;counter-reset:e;margin:0;padding:0;
+    display:grid;grid-template-columns:1fr 1fr;gap:2px 40px;}
+  @media(max-width:680px){.editlist ol{grid-template-columns:1fr;}}
+  .editlist li{counter-increment:e;display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;
+    padding:14px 0;border-bottom:1px solid rgba(176,141,87,.20);}
+  .editlist li::before{content:counter(e,decimal-leading-zero);font-family:"Cormorant Garamond",serif;
+    color:var(--brass);font-size:1.15rem;}
+  .editlist .en{color:#F1EADB;}
+  .editlist .es{font-size:.72rem;color:var(--sage);display:block;letter-spacing:.14em;text-transform:uppercase;}
+  .editlist a{color:var(--brass);text-decoration:none;font-weight:600;font-size:.76rem;letter-spacing:.06em;
+    text-transform:uppercase;white-space:nowrap;}
+  .editlist a:hover{text-decoration:underline;}
+
+  .foot{padding:56px 24px 48px;text-align:center;border-top:1px solid rgba(176,141,87,.22);}
   .foot .mark{font-family:"Cormorant Garamond",serif;font-size:1.6rem;color:#F1EADB;letter-spacing:.02em;}
   .foot .mark span{color:var(--brass);}
-  .foot p{max-width:54ch;margin:14px auto 0;color:var(--cream-dim);font-size:.86rem;}
+  .foot p{max-width:58ch;margin:14px auto 0;color:var(--cream-dim);font-size:.86rem;}
   .foot a{color:var(--brass);}
-  @media(prefers-reduced-motion:reduce){.hero::before{animation:none;}html{scroll-behavior:auto;}.card{transition:none;}}
+  a:focus-visible{outline:2px solid var(--brass);outline-offset:3px;}
+  @media(prefers-reduced-motion:reduce){.hero::before{animation:none;}html{scroll-behavior:auto;}}
 </style>
 </head>
 <body>
 
 <div class="disclosure">
-  This edit contains <b>affiliate links</b>. If you buy through them I may earn a small commission, at no extra cost to you — it never changes what makes the list.
+  This guide contains <b>affiliate links</b>. If you buy through them I may earn a small commission, at no extra cost to you, and it never changes what goes on the shelf.
 </div>
 
 <header class="hero">
   <div class="hero__inner">
-    <span class="eyebrow">The Shelf Edit · Moody & Book-Lined</span>
-    <h1>A dark academia bookshelf for a small room.</h1>
-    <p class="dek">The props, the lighting and the layering tricks that turn a plain shelf into a moody little library — even in a rented flat.</p>
+    <span class="eyebrow">Poetcore Living · A Styling Guide</span>
+    <h1>How to style a dark academia bookshelf so it looks collected, not bought</h1>
+    <p class="dek">The unwritten rules behind a moody, lived-in shelf: the mix, the triangles, the negative space, the colour, and how to get there on one small shelf in a rented room.</p>
+    <div class="meta">By Nuvelorva · A 7-minute read · Small-space &amp; renter-tested</div>
     <div class="rule"></div>
   </div>
 </header>
 
-<section class="intro">
-  <div class="wrap">
-    <p>A good academia shelf is styled, not just filled. It's <em>books, brass, warm light and a few old objects</em> arranged with restraint — and it works just as well on one small shelf as on a whole wall.</p>
-    <p>Everything here is freestanding or sits on the shelf — nothing needs drilling, so it's all renter-safe. Here's the edit.</p>
-  </div>
-</section>
+<article class="article">
+  <div class="measure">
 
-<section class="howto">
-  <div class="wrap">
-    <span class="eyebrow">First, the styling rules</span>
-    <h2>How to style the shelf</h2>
-    <p class="lede">Five moves for that layered, scholarly, lived-in look.</p>
-    <ol class="steps">
-      <li><span class="n">1</span><span class="t"><b>Mix horizontal and vertical.</b> Stack some books flat, stand others up — the rhythm is what makes it look styled.</span></li>
-      <li><span class="n">2</span><span class="t"><b>Add brass.</b> Bookends, a candlestick, a small object or two in aged brass warm the whole shelf.</span></li>
-      <li><span class="n">3</span><span class="t"><b>Light it low.</b> A small warm lamp or a battery light behind the books gives that candlelit-library glow.</span></li>
-      <li><span class="n">4</span><span class="t"><b>Leave gaps.</b> Don't fill every inch — a little empty space reads as considered, not cluttered.</span></li>
-      <li><span class="n">5</span><span class="t"><b>Layer old things.</b> A vintage box, dried flowers, a clothbound set — texture and age do the work.</span></li>
+    <p>There's a particular kind of shelf that stops you scrolling: dim, book-heavy, a little untidy in a way that reads as <em>years of accumulation</em> rather than an afternoon at the shops. It looks like the shelf of someone who reads at two in the morning and forgets to dust. And the frustrating thing, when you try to copy it, is that buying the same objects almost never produces the same effect. You end up with a neat row of nice things that looks, unmistakably, <em>bought last Tuesday</em>.</p>
+
+    <p>That gap is the whole subject of this guide. A dark academia bookshelf is a styling problem, not a shopping one. The mood comes from <em>how</em> the books and objects are arranged: the rhythm of upright and stacked, the way the eye is led around in triangles, the pools of empty space that stop it feeling like a car-boot table, and one small source of warm light. Get those right and even a charity-shop shelf looks collected. Get them wrong and the loveliest brass in the world still looks like it's waiting to be scanned at the till. What follows is the method. The principles first, then a layered how-to, an afternoon plan, and a section on the thing everyone gets wrong, which is knowing when to stop. Pieces I actually use are recommended in context, and gathered into one list at the end if you'd rather just shop.</p>
+
+    <h2><span class="kicker">Start here</span>The principles that do the work</h2>
+    <p>Before you place a single book, it helps to know what you're actually aiming for. Five ideas underpin every good academia shelf. They aren't rules so much as the physics of why some shelves read as <em>curated</em> and others as cluttered. Learn them and you can improvise the rest.</p>
+    <ol class="rule-list">
+      <li><span class="n">1</span><span><b>Mix vertical and horizontal.</b> A shelf of books all standing to attention looks like a shop; a shelf of books all stacked flat looks like a move-in day. The lived-in look is the <em>rhythm</em> between the two: a run of upright spines, then a short horizontal stack, then upright again.</span></li>
+      <li><span class="n">2</span><span><b>Arrange in triangles.</b> Your eye likes to travel. Place your tallest points, a candlestick here, a stack topped with an object there, so they form loose triangles across the shelf rather than a flat, even line. It's the single trick that most makes a shelf look "styled".</span></li>
+      <li><span class="n">3</span><span><b>Leave negative space.</b> The instinct is to fill every inch; resist it. A pocket of emptiness beside a grouping is what tells the eye the fullness was a choice. Air is a design element, not a failure to shop enough.</span></li>
+      <li><span class="n">4</span><span><b>Keep a tight, moody palette.</b> Oxblood, forest, aubergine, aged brass, ink, and every shade of old paper. Turn a few loud modern paperbacks spine-in so only the page block shows. Instant restraint, no spend.</span></li>
+      <li><span class="n">5</span><span><b>Think 60/30/10.</b> Roughly sixty per cent books, thirty per cent objects, ten per cent left as air. It's a starting ratio, not a law, but if a shelf feels off, it's usually because the objects have crept past thirty and swallowed the books.</span></li>
     </ol>
+
+    <h2><span class="kicker">Layer one</span>Books as the foundation</h2>
+    <p>Books are the ground the whole shelf is built on, so arrange them first and add objects afterwards, never the reverse. Work in <em>groupings</em> rather than filling left to right: a vertical run of five or six spines, then a horizontal stack of three or four laid flat, with a small gap of daylight between the clusters. Vary the stack heights so the top line of the shelf rises and falls instead of running flat. Turn the most colourful, modern jackets spine-inward; the muted page block reads far more old-library than a glossy orange Penguin does.</p>
+    <p>If your own books skew bright and paperback, a single clothbound set is the fastest way to seed the palette. The foil-stamped spines are dark, textured and uniform, exactly the collected look, and, unlike most props, you'll actually read them across a winter.</p>
+    <div class="pick">
+      <span class="lab">The anchor books</span>
+      <div class="name">Clothbound classics box set</div>
+      <p>Penguin's foil-stamped clothbound Dickens, where the spines do half the decorating and the muted cloth sets the palette for everything else on the shelf. Decor that doubles as a season's reading.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/0141198419?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+    <p>Then you need something to hold a run of upright books from toppling, and a good bookend earns its keep twice: once structurally and once as one of your triangle's high points. Heavy, aged metal suits the mood better than anything sleek; the weight also means it actually works.</p>
+    <div class="pick">
+      <span class="lab">The workhorse prop</span>
+      <div class="name">Cast-iron bookends</div>
+      <p>Heavy retro black-and-gold cast-iron bookends that hold a run of books upright and catch the lamplight. Weighty enough to do the real job, handsome enough to be part of the styling. Freestanding; sits on any shelf.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B0B2DJXX9V?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Layer two</span>Objects, brass and the height game</h2>
+    <p>Once the books are grouped, objects are how you build the triangles and the age. The rule here is <em>fewer, taller, older</em>. One characterful object among the books beats a scatter of small ones, which just reads as clutter. Aged brass is the material that ties a dark academia shelf together. It warms the whole thing and reflects your lamplight back into the room. A pair of tapers is the classic move: unlit, they still give you two clean vertical lines to anchor a triangle; lit of an evening, they do more for the mood than any amount of styling.</p>
+    <div class="pick">
+      <span class="lab">The height &amp; the glow</span>
+      <div class="name">Brass taper candlesticks</div>
+      <p>A pair of rustic gold taper candlesticks: instant vertical height for your triangles, and instant academia atmosphere once lit. Pure styling; sits on any surface, no upkeep beyond the odd new candle.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B0CPXV9W3R?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+    <p>Hard lines everywhere (spines, boxes, metal) start to feel severe, so soften one or two points with something organic. Dried stems in a small vessel are ideal: no watering, no wilting, and the texture reads as age. Keep the arrangement sparse and asymmetric; a lopsided few stems look far more collected than a tidy full bunch.</p>
+    <div class="pick">
+      <span class="lab">The soft note</span>
+      <div class="name">Ceramic bud vases</div>
+      <p>A set of three distressed ceramic bud vases for dried stems, to soften the hard lines of books and metal. Cluster two together and leave one apart to build a triangle. Sits on the shelf; no upkeep at all.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B0BJK91Y9M?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Layer three</span>Light, the ingredient nobody photographs</h2>
+    <p>Here is the secret the reference images never mention: those shelves are lit <em>low and warm</em>, and that lighting is doing more work than any object on them. The dark academia mood is really a colour-temperature. Overhead white light flattens everything and kills the shadows that give a shelf depth; one small, warm, low source at shelf height brings it all to life, pooling on the brass, throwing the gaps into soft shadow, making the whole thing look like a place someone sits and reads rather than a display.</p>
+    <p>Aim for a warm bulb (look for "warm white" or "amber", never "daylight") on a small lamp you can set on the shelf itself or on the surface beside it. A brass base keeps it inside the palette even when it's switched off.</p>
+    <div class="pick">
+      <span class="lab">The mood-maker</span>
+      <div class="name">Small warm table lamp</div>
+      <p>A compact warm-glow lamp with a brass base that washes the shelf in soft, low light. It's the single thing that most turns a plain shelf into a moody little library. Plug-in; no wiring, no drilling.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B0G2PPJGKW?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Layer four</span>The shelf itself, if you need one</h2>
+    <p>None of the above requires you to own built-in shelving, and in a rental you almost certainly don't want to fix anything to a wall. A small freestanding unit gives you the whole canvas without a single hole. A four-tier rustic wood-and-metal shelf is the sweet spot for a small room: enough tiers to practise the vertical/horizontal rhythm, narrow enough to tuck into a corner, and light enough to move with you when the lease ends.</p>
+    <div class="pick">
+      <span class="lab">The canvas</span>
+      <div class="name">Small wooden bookshelf</div>
+      <p>A compact four-tier shelf in rustic wood and black metal for a tight corner or wall: the whole styling canvas with none of the commitment. Freestanding, so nothing is drilled and it comes with you when you go.</p>
+      <a class="shop" href="https://www.amazon.co.uk/dp/B07B7LT3WN?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">See it on Amazon</a>
+    </div>
+
+    <h2><span class="kicker">Style it in an afternoon</span>A two-pass plan</h2>
+    <p>You don't need a whole weekend for one shelf. An afternoon does it. The trick is two passes: build the structure completely, then step back and edit. Doing both at once is how shelves end up overfilled.</p>
+    <div class="plan">
+      <div class="day">
+        <h3>First pass: the build</h3>
+        <ul>
+          <li>Clear the shelf entirely and give it a wipe.</li>
+          <li>Place your books in groupings: vertical runs, then flat stacks, with gaps between.</li>
+          <li>Vary stack heights so the top line rises and falls; turn loud jackets spine-in.</li>
+          <li>Set the bookends to hold your upright runs.</li>
+          <li>Add the tall objects (candlesticks, a topped stack) to rough out your triangles.</li>
+        </ul>
+      </div>
+      <div class="day">
+        <h3>Second pass: the edit</h3>
+        <ul>
+          <li>Add the soft note: a few dried stems in a vase, kept sparse.</li>
+          <li>Position the lamp low and to one side; switch off the big light.</li>
+          <li>Step back two metres. Remove one or two things, because there's always one too many.</li>
+          <li>Check for a pocket of negative space; open one up if it's all full.</li>
+          <li>Photograph it on your phone, because the camera shows clutter your eye forgives.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2><span class="kicker">The part everyone overdoes</span>Keeping it from looking cluttered</h2>
+    <p>The failure mode of dark academia isn't too little. It's too much. The aesthetic <em>invites</em> maximalism, and one skull-shaped candle too many tips the whole thing from moody into jumble-sale. A few habits keep you on the right side of the line. Follow the "remove one" rule: once a shelf looks finished, take one thing away, and it will almost always look better. Give your best objects breathing room rather than crowding them, since a single candlestick with space around it has more presence than three fighting for the same corner. Watch the ratio: if objects have crept past a third of the shelf, pull some off and let the books lead again. And trust the phone photo over your eye. Standing in the room you fill in the mood; the flat image shows what a stranger, or Pinterest, actually sees, and it's ruthless about clutter your eye has stopped noticing.</p>
+
+    <h2><span class="kicker">Renter &amp; styling questions</span>Frequently asked</h2>
+    <div class="faq">
+      <details>
+        <summary>How do I style a shelf if I don't own many "nice" books?</summary>
+        <p>You need far fewer than you'd think. Turn colourful paperbacks spine-inward so only the muted page block shows, and let one clothbound set carry the front. Charity shops are full of cloth and leather bindings for a pound or two, so buy for the spine, not the title. Ten characterful books styled well beat a hundred bright ones lined up.</p>
+      </details>
+      <details>
+        <summary>Can I get the look on a single small shelf in a rented room?</summary>
+        <p>Yes, this whole method is built for exactly that. A shelf is a self-contained scene, so one tier of a bookcase, a windowsill, or a small freestanding unit is plenty. Everything here is freestanding or simply sits on the shelf; nothing is drilled or fixed, so it's fully renter-safe and moves with you.</p>
+      </details>
+      <details>
+        <summary>What actually makes it read as "collected" rather than bought?</summary>
+        <p>Three things, in order: the mix of upright and stacked books, low warm light instead of overhead white, and a bit of empty space left on purpose. Age and mismatch help too: objects that don't quite match look accumulated over time, whereas a matching set looks bought together, because it was. Restraint reads as taste; abundance reads as a shop.</p>
+      </details>
+      <details>
+        <summary>Is real candlelight safe on a bookshelf?</summary>
+        <p>Treat lit tapers as a supervised, occasional thing, never near the books and never left burning unattended, because paper and open flame don't mix. For the day-to-day glow, lean on the warm lamp, which gives you the same pooled, low light with none of the risk. Keep the candlesticks for atmosphere when you're sitting right there with them.</p>
+      </details>
+    </div>
+
+    <p style="margin-top:2em;"><em>Style it this afternoon, edit it ruthlessly, and light it low.</em> That's the whole of it: a shelf that looks like years of quiet reading, built from a handful of the right pieces and, mostly, from knowing when to leave the last space empty.</p>
+
   </div>
-</section>
+</article>
 
-<section class="edit">
+<section class="editlist">
   <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">The Edit · 6 pieces</span>
-      <h2>The bookshelf styling edit, shopped</h2>
-    </div>
-    <div class="grid">
-
-      <!-- CARD 01 — Brass bookends
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/01-brass-bookends.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/01-brass-bookends.jpg" alt="Brass bookends" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">01</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Props</span>
-          <h3>Brass bookends</h3>
-          <p>Heavy aged-brass bookends to hold a run of books and catch the lamplight.</p>
-          <p class="renter">Freestanding; sits on any shelf.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 02 — Small wooden bookshelf
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/02-small-wooden-bookshelf.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/02-small-wooden-bookshelf.jpg" alt="Small wooden bookshelf" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">02</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Shelving</span>
-          <h3>Small wooden bookshelf</h3>
-          <p>A compact vintage-look shelf for a tight corner or wall.</p>
-          <p class="renter">Freestanding — no drilling.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 03 — Brass candlestick
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/03-brass-candlestick.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/03-brass-candlestick.jpg" alt="Brass candlestick" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">03</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Light</span>
-          <h3>Brass candlestick</h3>
-          <p>A single tall brass candlestick for instant academia atmosphere.</p>
-          <p class="renter">Pure styling; any surface.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 04 — Small warm table lamp
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/04-small-warm-table-lamp.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/04-small-warm-table-lamp.jpg" alt="Small warm table lamp" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">04</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Lighting</span>
-          <h3>Small warm table lamp</h3>
-          <p>A little brass lamp to wash the shelf in warm light.</p>
-          <p class="renter">Plug-in; no wiring.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 05 — Clothbound classics set
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/05-clothbound-classics-set.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/05-clothbound-classics-set.jpg" alt="Clothbound classics set" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">05</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Styling</span>
-          <h3>Clothbound classics set</h3>
-          <p>A set of old-look clothbound books — the spines do half the decorating.</p>
-          <p class="renter">Decor you'll actually read.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-      <!-- CARD 06 — Dried flowers & vase
-           IMAGE: paste your Amazon SiteStripe image URL into src="" (Get Link ▸ Image),
-                  OR save the photo as images/06-dried-flowers-vase.jpg
-           LINK:  paste your SiteStripe text link into href="" below (keep rel="nofollow sponsored") -->
-      <article class="card">
-        <div class="card__plate">
-          <img class="card__img" src="images/06-dried-flowers-vase.jpg" alt="Dried flowers & vase" loading="lazy" onerror="this.classList.add('missing')">
-          <span class="num">06</span><span class="swap">Add photo</span>
-        </div>
-        <div class="card__body">
-          <span class="card__tag">Detail</span>
-          <h3>Dried flowers & vase</h3>
-          <p>A small vase of dried stems to soften the hard lines of books.</p>
-          <p class="renter">Sits on the shelf; no upkeep.</p>
-          <a class="btn" href="#REPLACE-WITH-YOUR-AFFILIATE-LINK" rel="nofollow sponsored noopener" target="_blank">Shop this</a>
-        </div>
-      </article>
-
-    </div>
+    <span class="eyebrow">The full edit</span>
+    <h2>Everything on the shelf, in one list</h2>
+    <p class="lede">The six pieces referenced above, gathered for easy shopping. Every link is an affiliate link (tag disclosed at the top); prices and stock are on Amazon.</p>
+    <ol>
+      <li><span class="en">Clothbound classics box set<span class="es">Books</span></span><a href="https://www.amazon.co.uk/dp/0141198419?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Cast-iron bookends<span class="es">Props</span></span><a href="https://www.amazon.co.uk/dp/B0B2DJXX9V?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Brass taper candlesticks<span class="es">Light</span></span><a href="https://www.amazon.co.uk/dp/B0CPXV9W3R?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Ceramic bud vases<span class="es">Detail</span></span><a href="https://www.amazon.co.uk/dp/B0BJK91Y9M?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Small warm table lamp<span class="es">Lighting</span></span><a href="https://www.amazon.co.uk/dp/B0G2PPJGKW?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+      <li><span class="en">Small wooden bookshelf<span class="es">Shelving</span></span><a href="https://www.amazon.co.uk/dp/B07B7LT3WN?tag=nuvelorva21-21" rel="nofollow sponsored noopener" target="_blank">Shop</a></li>
+    </ol>
   </div>
 </section>
 
 <footer class="foot">
   <div class="wrap">
     <div class="mark">Nuvel<span>orva</span></div>
-    <p>Dressing &amp; decorating like a poet — in a rented flat. <br>
-    Affiliate disclosure: some links above are affiliate links, meaning I may earn a small commission if you buy through them, at no extra cost to you. I only include pieces that fit the look and the renter's rules. Questions? <a href="mailto:admin@nuvelorva.com">admin@nuvelorva.com</a>.</p>
+    <p>Dressing &amp; decorating like a poet, in a rented flat.<br>
+    Affiliate disclosure: some links on this page are affiliate links, meaning I may earn a small commission if you buy through them, at no extra cost to you. I only recommend pieces that fit the look and the renter's rules. Questions? <a href="mailto:admin@nuvelorva.com">admin@nuvelorva.com</a>.</p>
   </div>
 </footer>
 
